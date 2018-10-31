@@ -1,0 +1,25 @@
+<script type="text/javascript">
+  window.images = {
+    logo: "<%= image_url('logo.jpg') %>",
+    pink_logo: "<%= image_url('pink_logo.jpg') %>",
+    sf_index_photo: "<%= image_url('sf_index_photo.jpg') %>",
+    la_index_photo: "<%= image_url('la_index_photo.jpg') %>",
+    ny_index_photo: "<%= image_url('ny_index_photo.jpg') %>",
+    tk_index_photo: "<%= image_url('tokyo_index_photo.jpg') %>",
+    hav_index_photo: "<%= image_url('havana_index_photo.jpg') %>",
+    rv_photo: "<%= image_url('rv_photo.jpg') %>",
+    cottage_photo: "<%= image_url('1.jpg') %>",
+    alice_photo: "<%= image_url('alice_photo.jpg') %>"
+  }
+</script>
+
+<% if logged_in? %>
+  <script type="text/javascript">
+    window.currentUser = <%= render(
+      "api/users/user.json.jbuilder",
+      user: current_user
+    ).html_safe %>
+  </script>
+<% end %>
+<main id="root">
+</main>

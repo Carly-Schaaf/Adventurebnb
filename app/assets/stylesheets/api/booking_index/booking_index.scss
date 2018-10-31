@@ -1,0 +1,91 @@
+.entire-index.bookings {
+  padding-top: 90px;
+}
+
+.modify-booking-btn-pink {
+  display: block;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  color: rgb(72, 72, 72);
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: 27px;
+  border: 2px solid #FF5A5F;
+  border-radius: 2px;
+}
+
+
+.modify-booking-btn-green {
+  margin-top: 20px;
+  display: block;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  color: rgb(72, 72, 72);
+  font-weight: 400;
+  border: 2px solid rgb(0, 132, 137);
+  border-radius: 2px;
+}
+
+.modify-booking-btn-green:hover, .modify-booking-btn-pink:hover {
+  border: 2px solid #e4e4e4;
+}
+
+.bookings-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 430px));
+  grid-auto-rows: 595px;
+  // change repeat to auto-fit if I want no more than 5 listings at most to show
+  overflow: hidden;
+  justify-content: center;
+  grid-row-gap: 50px;
+}
+
+.booking-item {
+  margin-right: 25px;
+  margin-left: 25px;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+}
+
+.interior-booking-item {
+  text-align: center;
+  justify-content: center;
+}
+
+.booking-city {
+  font-size: 36px;
+  color: #484848;
+  font-weight: 300;
+}
+
+.interior-booking-item li {
+  padding-top: 10px;
+}
+
+.index-photo.booking {
+  width: 100%;
+}
+
+.item-title.booking {
+  font-weight: normal;
+  color: #2d2d2d;
+  font-size: 16px;
+  padding-bottom: 20px;
+  margin-right: 25px;
+  margin-left: 25px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.item-title.booking:hover {
+  color: rgb(0, 132, 137);
+}
+
+.item-type.booking {
+  color: #484848;
+  font-size: 16px;
+  font-weight: normal;
+}

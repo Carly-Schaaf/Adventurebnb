@@ -1,0 +1,40 @@
+#map-container {
+  width: 34%;
+  height: calc(100vh - 144px);
+  float: left;
+  margin-left: 20px;
+}
+
+.filtered-index-by-map {
+  float: left;
+  width: 66%
+}
+
+.listing-row-title.map {
+  margin-top: 40px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.entire-index.map {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+    #map-container {
+        width: 50%;
+    }
+    .filtered-index-by-map {
+      width: 45%;
+    }
+    .entire-index.map {
+      padding-left: 20px;
+      padding-right: 0px;
+    }
+    .listing-row-title.map {
+      word-wrap: break-word;
+    }
+
+}

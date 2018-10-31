@@ -1,0 +1,44 @@
+.entire-index {
+  min-height: 400px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+  margin-top: 80px;
+}
+
+.listings-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  // change repeat to auto-fit if I want no more than 5 listings at most to show
+  overflow: hidden;
+}
+
+.listing-row-title {
+  display: block;
+  color: rgb(72, 72, 72);
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: normal;
+  padding-left: 6px;
+  padding-top: 40px;
+  padding-bottom: 12px;
+}
+
+.index-listing-description {
+  width: 80%;
+  padding-bottom: 0px;
+}
+
+.index-stars-container li {
+  display: inline;
+}
+
+.index-stars-container {
+  display: inline;
+}
+
+.num-reviews {
+  display: inline;
+}

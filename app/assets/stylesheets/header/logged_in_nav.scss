@@ -1,0 +1,22 @@
+.nav-user-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(228, 228, 228);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.user-links-container {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.user-links-container li {
+  display: inline;
+}

@@ -1,0 +1,41 @@
+.logo {
+  width: 49px;
+  height: 32px;
+  padding-left: 20px;
+  display: inline;
+}
+
+.nav-splash-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-session-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.session-btn {
+  background: transparent;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+}
+
+
+.nav-session-links-container:last-child {
+  padding-right: 5px;
+}
+
+.session-btn:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}

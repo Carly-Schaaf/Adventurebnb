@@ -1,0 +1,108 @@
+.listing-calendar {
+  border: 1px solid #e4e4e4;
+  background-color: #ffffff;
+  width: 377px;
+  height: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  position: sticky;
+  top: 80px;
+}
+
+.listing-calendar-price li {
+  display: inline;
+}
+
+.daily-rate {
+  font-size: 22px;
+  line-height: 26px;
+  color: rgb(72, 72, 72);
+  font-weight: 800;
+  letter-spacing: normal;
+  padding-right: 7px;
+}
+
+.fa-dollar-sign {
+  padding-right: 0px;
+  width: 13px;
+}
+
+.per-night {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.calendar-price-section {
+  border-bottom: 1px solid rgb(228, 228, 228);
+  padding-bottom: 14px;
+  padding-top: 30px;
+}
+
+.listing-show-date {
+  display: inline;
+}
+
+.listing-show-guest-dropdwn {
+  width: 100%;
+  height: 45px;
+  padding: 8px;
+  border: 1px solid #dbdbdb;
+  background: #ffffff;
+  font-size: 17px;
+  color: #484848;
+  line-height: 24px;
+  margin-top: 6px;
+}
+
+.listing-show-guest-dropdwn:focus {
+  outline: 1px solid rgb(0, 132, 137);
+}
+
+.dates {
+  padding-top: 39px;
+  padding-bottom: 10px;
+}
+
+.request-btn {
+  margin-bottom: 30px;
+}
+
+.booking-errors {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #484848;
+  text-align: center;
+}
+
+.booking-errors li {
+  display: block;
+}
+
+.calendar-label {
+  font-size: 12px;
+}
+
+.material-icons.small {
+  font-size: 13px;
+  height: 1em;
+  width: 1em;
+}
+
+.small-stars {
+  padding-right: 0px;
+}
+
+.index-stars-container {
+  display: flex;
+}
+
+.num-reviews {
+  font-weight: 600;
+  word-wrap: break-word;
+  font-size: 12px;
+  line-height: 16px;
+  color: #484848;
+  padding-left: 5px;
+  display: inline;
+  padding-top: 1px;
+}

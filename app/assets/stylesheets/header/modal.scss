@@ -1,0 +1,103 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(72, 72, 72, 0.5);
+  z-index: 10;
+}
+
+.modal-background.calendar {
+
+}
+
+.modal-screen {
+  color: rgb(72, 72, 72);
+  display: inline;
+  margin: 0px;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  min-width: 570px;
+}
+
+.modal-screen.calendar {
+  min-width: 345px;
+  transform: translate(-49.6%, -50%);
+}
+
+.session-form {
+  width: 100%;
+  padding: 32px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.session-input {
+  width: 100%;
+  padding: 11px;
+  margin: auto;
+  margin-bottom: 13px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid rgb(232,232,232);
+}
+
+.session-input:focus {
+  border: 1px solid rgb(0, 132, 137);
+}
+
+::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.session-submit {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 13px;
+  color: white;
+  font-weight: 600;
+  margin-top: 2px;
+  margin-bottom: 15px;
+  background-color: #FF5A5F;
+  border: 2px solid transparent;
+  border-radius: 2px;
+}
+
+.demo-submit {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 13px;
+  color: rgb(72, 72, 72);
+  font-weight: 400;
+  margin-top: 2px;
+  margin-bottom: 15px;
+  border: 2px solid rgb(0, 132, 137);
+  border-radius: 2px;
+}
+
+.other-session-links-container {
+  text-align: center;
+}
+
+.other-session-link {
+  color: rgb(0, 132, 137);
+  border-bottom: 1px solid transparent;
+}
+
+.other-session-link:hover {
+  border-bottom: 1px solid rgb(0, 132, 137);
+}
+
+.session-errors {
+  text-align: center;
+  margin-bottom: 11px;
+}

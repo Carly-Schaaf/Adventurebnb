@@ -1,0 +1,17 @@
+.index-session-btn {
+  background: transparent;
+  font-color: rgb(72, 72, 72);
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+}
+
+.index-session-btn:hover {
+  border-bottom: 2px solid rgb(72, 72, 72);
+}
