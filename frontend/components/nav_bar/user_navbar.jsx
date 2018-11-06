@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import SearchBar from '../search/search_bar';
 
 const UserNavBar = ({ logout }) => (
-  <div className="logged-in-splash-background">
     <header className="nav-user-container">
       <div className="logo-search-container">
         <li><Link to="/index"><img className="logo" src={window.images.pink_logo} /></Link></li>
@@ -15,7 +14,6 @@ const UserNavBar = ({ logout }) => (
             onClick={logout}>Logout</button></li>
         </ul>
       </header>
-    </div>
 );
 
 export default UserNavBar;

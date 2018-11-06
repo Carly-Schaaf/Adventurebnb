@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import SearchBar from '../search/search_bar';
 
 const LoggedOutNavBar = ({ openModal }) => (
-  <div className="logged-in-splash-background">
     <header className="nav-user-container">
       <div className="logo-search-container">
         <Link to="/index"><img className="logo" src={window.images.pink_logo} /></Link>
@@ -16,7 +15,6 @@ const LoggedOutNavBar = ({ openModal }) => (
             openModal("signup")}>Sign up</button>
         </nav>
       </header>
-    </div>
 );
 
 export default LoggedOutNavBar;
