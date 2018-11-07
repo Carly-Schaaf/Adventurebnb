@@ -91,7 +91,7 @@ class SearchBox extends React.Component {
                 placeholder="Anywhere"></input></div>
             <div>
               <div className="search-box-dates">
-                <label className="search-box-label" for="search-bar">DATES
+                <label className="search-box-label" for="search-bar">DATES</label>
                 <DateRangePicker
                 startDate={this.state.arrivalDate}
                 startDateId="check_in"
@@ -102,7 +102,7 @@ class SearchBox extends React.Component {
                 focusedInput={this.state.focusedInput}
                 onFocusChange={focusedInput => this.setState({ focusedInput })}
                 startDatePlaceholderText="Check in"
-                endDatePlaceholderText="Check out"/></label>
+                endDatePlaceholderText="Check out"/>
               </div>
             </div>
 

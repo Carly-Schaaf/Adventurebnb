@@ -1,26 +1,33 @@
 #map-container {
-  width: 34%;
+  width: 32%;
   height: calc(100vh - 144px);
   float: left;
   margin-left: 20px;
   margin-top: 8px;
+  position: sticky !important;
+  top: 80px !important;
 }
 
 .filtered-index-by-map {
   float: left;
-  width: 66%
+  width: 66%;
+  padding-bottom: 65px;
 }
 
-.listing-row-title.map {
-  margin-top: 40px;
-  padding-top: 0px;
-  display: flex;
-  flex-direction: row;
-}
+// .listing-row-title.map {
+//   margin-top: 40px;
+//   padding-top: 0px;
+//   display: flex;
+//   flex-direction: row;
+// }
 
 .entire-index.map {
   padding-left: 40px;
   padding-right: 40px;
+  margin-top: 40px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: row;
 }
 
 @media only screen and (max-width: 800px) {

@@ -2,13 +2,8 @@
   width: 45%;
 }
 /* width: 150px; */
-.DayPicker_weekHeader li {
-  padding-left: 17px;
-}
-
-
-.DayPicker_weekHeader li:first-of-type {
-  padding-left: 10px;
+.DayPicker_weekHeader_ul {
+  display: flex;
 }
 
 .DateRangePicker {

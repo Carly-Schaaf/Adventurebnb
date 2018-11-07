@@ -23,29 +23,18 @@ class Search extends React.Component {
     // if (this.props.bounds.hasOwnProperty('lat') || this.props.bounds.hasOwnProperty('northEast')) {
       return(
         <div className="entire-index map">
-          <div className="listing-row-title map">
-            <div className="filtered-index-by-map">
-              <ListingIndex listings={ Object.values(listings) }
-                fetchListings={ fetchListings } />
-            </div>
+          <div className="filtered-index-by-map">
+            <ListingIndex listings={ Object.values(listings) }
+              fetchListings={ fetchListings } />
+          </div>
             <Map changeFilter={ changeFilter } listings={ listings }
               bounds={ this.props.bounds } fetchListings={ fetchListings }/>
-          </div>
         </div>
       );
-    // } else {
-    //   return null;
+
     }
 }
 
 export default withRouter(Search);
-
-
-// <div className="entire-index map">
-//   <div className="listing-row-title map">
-//     <div className="filtered-index-by-map">
-//       <ListingIndex listings={ Object.values(listings) } />
-//     </div>
-//     <Map changeFilter={ changeFilter } listings={ listings }
-//       bounds={ this.props.bounds } />
-//   </div>
+// <div className="listing-row-title map">
+// </div>
