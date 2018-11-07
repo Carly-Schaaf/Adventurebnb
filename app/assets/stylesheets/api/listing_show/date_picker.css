@@ -8,4 +8,9 @@
 
 .DateRangePicker {
   margin-top: 6px;
+  width: 100%;
+}
+
+.DateRangePickerInput {
+  width: 100%;
 }

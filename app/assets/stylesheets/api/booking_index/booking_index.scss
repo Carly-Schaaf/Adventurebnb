@@ -36,7 +36,7 @@
 
 .bookings-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 430px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
   grid-auto-rows: 595px;
   // change repeat to auto-fit if I want no more than 5 listings at most to show
   overflow: hidden;
