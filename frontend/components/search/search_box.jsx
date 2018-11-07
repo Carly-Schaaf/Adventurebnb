@@ -25,7 +25,7 @@ class SearchBox extends React.Component {
   }
 
   componentDidMount() {
-    const input = document.getElementById("search-bar");
+    const input = document.getElementById("search-bar-splash");
     const autocomplete = new google.maps.places.Autocomplete(input);
     google.maps.event.addDomListener(window, "load", autocomplete);
     let address;
@@ -62,7 +62,6 @@ class SearchBox extends React.Component {
     if (e) {
       e.preventDefault();
     }
-    // this.setState({input: ""});
   }
 
   setInput(field) {
@@ -86,9 +85,10 @@ class SearchBox extends React.Component {
         <form className="search-form" onSubmit={this.handleSubmit}>
             <label className="search-box-label" for="search-bar">WHERE</label>
             <div className="search-box-input">
-              <input id="search-bar" value={this.state.input} onChange={this.setInput("input")}
+              <input id="search-bar-splash" value={this.state.input} onChange={this.setInput("input")}
                 className="box-input" type="text"
-                placeholder="Anywhere"></input></div>
+                placeholder="Anywhere"></input>
+            </div>
             <div>
               <div className="search-box-dates">
                 <label className="search-box-label" for="search-bar">DATES</label>

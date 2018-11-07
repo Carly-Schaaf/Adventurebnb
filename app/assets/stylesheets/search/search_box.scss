@@ -10,6 +10,15 @@
   transform: translate(180%, 30%)
 }
 
+.search-bar-splash {
+  padding: 17px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  display: inline;
+  height: 48px;
+  width: 460px;
+}
+
 @media only screen and (max-width: 800px) {
      .search-box {
        width: 100%;
