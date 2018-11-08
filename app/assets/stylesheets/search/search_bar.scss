@@ -14,17 +14,21 @@
 }
 
 .pac-item {
-  height: 60px !important;
+  min-height: 45px !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.pac-item span {
+  font-size: 16px !important;
+  color: #484848;
 }
 
-.pac-icon {
-  vertical-align: middle !important;
-  margin-top: 20px !important;
-}
+.pac-container:after {
+    /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */
 
-.pac-item-query, .pac-matched {
-  vertical-align: middle !important;
-  margin-top: 40px !important;
+    background-image: none !important;
+    height: 0px;
 }
 
 .search-bar {

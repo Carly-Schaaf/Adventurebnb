@@ -26,7 +26,10 @@ class SearchBox extends React.Component {
 
   componentDidMount() {
     const input = document.getElementById("search-bar-splash");
-    const autocomplete = new google.maps.places.Autocomplete(input);
+    const options = {
+      types: ['geocode']
+    };
+    const autocomplete = new google.maps.places.Autocomplete(input, options);
     google.maps.event.addDomListener(window, "load", autocomplete);
     let address;
     autocomplete.addListener("place_changed", () => {
