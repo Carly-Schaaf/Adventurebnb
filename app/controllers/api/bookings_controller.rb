@@ -37,6 +37,11 @@ class Api::BookingsController < ApplicationController
     render :index
   end
 
+  def bookings_by_listing
+    @bookings = Booking.where(listing_id: params[:listing_id])
+    render :index
+  end
+
   def edit
     # don't think I need this
   end

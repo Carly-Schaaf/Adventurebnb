@@ -14,6 +14,12 @@ export const requestBookings = () => (dispatch) => (
     bookings => dispatch({type: RECEIVE_BOOKINGS, bookings})
   )
 );
+
+export const requestBookingsForListing = (listingId) => (dispatch) => (
+  APIBooking.fetchBookingsForListing(listingId).then(
+    bookings => dispatch({type: RECEIVE_BOOKINGS, bookings})
+  )
+);
 //
 // export const requestBooking = (bookingId) => (dispatch) => (
 //   APIBooking.fetchBooking(bookingId).then(

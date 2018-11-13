@@ -21,7 +21,8 @@ class Calendar extends React.Component {
       bookingId: this.props.bookingId,
       arrivalDate: this.props.arrivalDate,
       departureDate: this.props.departureDate,
-      numGuests: this.props.numGuests
+      numGuests: this.props.numGuests,
+      bookings: Object.values(this.props.bookings)
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.setState = this.setState.bind(this);
@@ -54,6 +55,18 @@ class Calendar extends React.Component {
     );
   }
 
+  isDayBooked(day) {
+    let bookings = this.state.bookings;
+    for (let i = 0; i < bookings.length; i++) {
+      let start = bookings[i].arrivalDate;
+      let end = bookings[i].departureDate;
+      if (day.isBetween(start, end)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   render() {
     const { listing, maxGuests } = this.state;
     const reviews = Object.keys(this.props.reviews);
@@ -63,10 +76,7 @@ class Calendar extends React.Component {
     }
   return (
   <div className="listing-calendar">
-
-
     <div className="listing-calendar-price">
-
         <div className="calendar-price-section">
               <li className="daily-rate">
                 <i className="fas fa-dollar-sign"></i>{listing.dailyRate}</li>
@@ -97,6 +107,7 @@ class Calendar extends React.Component {
               onFocusChange={focusedInput => this.setState({ focusedInput })}
               startDatePlaceholderText="Check in"
               endDatePlaceholderText="Check out"
+              isDayBlocked={(day) => this.isDayBooked(day)}
               />
               </label>
             </div>
@@ -114,14 +125,8 @@ class Calendar extends React.Component {
             </button>
           </form>
         </div>
-
-
      </div>
-
-
    </div>);
- }
-
-}
+ }}
 
 export default Calendar;

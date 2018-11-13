@@ -7,11 +7,12 @@ class ListingShow extends React.Component {
 
   componentDidMount() {
     this.props.fetchListing(this.props.match.params.listingId);
+    this.props.fetchBookings(this.props.match.params.listingId);
   }
 
 
   render() {
-    const { listing, listingImg, submitButton, reviews } = this.props;
+    const { listing, listingImg, submitButton, reviews, bookings } = this.props;
     if (listing === undefined) return null;
     const amentities = listingAmentities(listing);
     return(

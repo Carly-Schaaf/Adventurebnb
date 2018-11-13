@@ -13,7 +13,8 @@ const mapStateToProps = ({ entities, session, errors }, ownProps) => ({
   arrivalDate: null,
   departureDate: null,
   numGuests: 1,
-  reviews: entities.reviews
+  reviews: entities.reviews,
+  bookings: entities.bookings
 });
 
 const mapDispatchToProps = (dispatch) => ({

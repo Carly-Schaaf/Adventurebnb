@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   end
 
   get 'api/listings_by_city/:city', to: 'api/listings#select_by_city'
+  get 'api/listings/:listing_id/bookings', to: 'api/bookings#bookings_by_listing'
 end
