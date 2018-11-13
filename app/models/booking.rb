@@ -18,7 +18,7 @@ class Booking < ApplicationRecord
     Booking
       .where.not(id: self.id)
       .where(listing_id: self.listing_id)
-      .where.not('arrival_date > :departure_date OR departure_date < :arrival_date',
+      .where.not('arrival_date >= :departure_date OR departure_date <= :arrival_date',
             arrival_date: arrival_date, departure_date: departure_date)
   end
 
