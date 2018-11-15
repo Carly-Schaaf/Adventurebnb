@@ -4,6 +4,7 @@ import { updateBooking, createBooking } from '../../actions/booking_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
 import momentPropTypes from 'react-moment-proptypes';
 import moment from 'moment';
+import { requestBookingsForListing } from '../../actions/booking_actions';
 
 const mapStateToProps = ({ entities, session, errors }, ownProps) => ({
   errors: errors.booking,
@@ -14,13 +15,16 @@ const mapStateToProps = ({ entities, session, errors }, ownProps) => ({
   departureDate: moment(ownProps.booking.departureDate),
   bookingId: ownProps.booking.id,
   numGuests: ownProps.booking.numGuests,
-  reviews: ownProps.listing.numReviews
+  reviews: ownProps.listing.numReviews,
+  bookings: entities.bookingsByListing
 });
 
 const mapDispatchToProps = (dispatch) => ({
   action: (booking) => dispatch(updateBooking(booking)),
   openModal: () => dispatch(openModal("signup")),
-  closeModal: () => dispatch(closeModal())
+  closeModal: () => dispatch(closeModal()),
+  fetchBookings: (listingId) =>
+  dispatch(requestBookingsForListing(listingId))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Calendar);

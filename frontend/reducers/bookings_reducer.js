@@ -1,4 +1,4 @@
-import { RECEIVE_BOOKINGS, RECEIVE_BOOKING, REMOVE_BOOKING } from '../actions/booking_actions';
+import { RECEIVE_BOOKINGS, RECEIVE_BOOKING, REMOVE_BOOKING, RECEIVE_BOOKINGS_FOR_LISTING } from '../actions/booking_actions';
 
 const bookingsReducer = (state = {}, action) => {
   Object.freeze(state);

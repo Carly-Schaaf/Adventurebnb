@@ -7,7 +7,6 @@ class ListingShow extends React.Component {
 
   componentDidMount() {
     this.props.fetchListing(this.props.match.params.listingId);
-    this.props.fetchBookings(this.props.match.params.listingId);
   }
 
 

@@ -22,10 +22,13 @@ class Calendar extends React.Component {
       arrivalDate: this.props.arrivalDate,
       departureDate: this.props.departureDate,
       numGuests: this.props.numGuests,
-      bookings: Object.values(this.props.bookings)
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.setState = this.setState.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.fetchBookings(this.props.listing.id);
   }
 
   handleSubmit(e) {
@@ -56,10 +59,11 @@ class Calendar extends React.Component {
   }
 
   isDayBooked(day) {
-    let bookings = this.state.bookings;
-    for (let i = 0; i < bookings.length; i++) {
-      let start = bookings[i].arrivalDate;
-      let end = bookings[i].departureDate;
+    const { bookings } = this.props;
+    let bookingArray = Object.values(bookings);
+    for (let i = 0; i < bookingArray.length; i++) {
+      let start = bookingArray[i].arrivalDate;
+      let end = bookingArray[i].departureDate;
       if (day.isBetween(start, end)) {
         return true;
       }

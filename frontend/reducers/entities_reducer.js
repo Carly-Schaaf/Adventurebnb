@@ -3,6 +3,7 @@ import usersReducer from './users_reducer';
 import listingsReducer from './listings_reducer';
 import bookingsReducer from './bookings_reducer';
 import reviewsReducer from './reviews_reducer';
+import listingsTripsReducer from './listings_trips_reducer';
 import { sfListingsReducer,
   laListingsReducer,
   nyListingsReducer,
@@ -13,6 +14,7 @@ const entitiesReducer = combineReducers({
   users: usersReducer,
   listings: listingsReducer,
   bookings: bookingsReducer,
+  bookingsByListing: listingsTripsReducer,
   sfListings: sfListingsReducer,
   laListings: laListingsReducer,
   nyListings: nyListingsReducer,

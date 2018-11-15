@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import Calendar from './calendar.jsx';
 import { createBooking } from '../../actions/booking_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
+import { requestBookingsForListing } from '../../actions/booking_actions';
 
 
 const mapStateToProps = ({ entities, session, errors }, ownProps) => ({
@@ -14,13 +15,15 @@ const mapStateToProps = ({ entities, session, errors }, ownProps) => ({
   departureDate: null,
   numGuests: 1,
   reviews: entities.reviews,
-  bookings: entities.bookings
+  bookings: entities.bookingsByListing
 });
 
 const mapDispatchToProps = (dispatch) => ({
   action: (booking, listingId) => dispatch(createBooking(booking, listingId)),
   openModal: () => dispatch(openModal("signup")),
-  closeModal: () => dispatch(closeModal())
+  closeModal: () => dispatch(closeModal()),
+  fetchBookings: (listingId) =>
+  dispatch(requestBookingsForListing(listingId))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Calendar);

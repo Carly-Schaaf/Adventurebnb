@@ -1,4 +1,5 @@
 export const RECEIVE_BOOKINGS = "RECEIVE_BOOKINGS";
+export const RECEIVE_BOOKINGS_FOR_LISTING = "RECEIVE_BOOKINGS_FOR_LISTING";
 export const RECEIVE_BOOKING = "RECEIVE_BOOKING";
 export const REMOVE_BOOKING = "REMOVE_BOOKING";
 export const RECEIVE_BOOKING_ERRORS = "RECEIVE_BOOKING_ERRORS";
@@ -17,7 +18,7 @@ export const requestBookings = () => (dispatch) => (
 
 export const requestBookingsForListing = (listingId) => (dispatch) => (
   APIBooking.fetchBookingsForListing(listingId).then(
-    bookings => dispatch({type: RECEIVE_BOOKINGS, bookings})
+    bookings => dispatch({type: RECEIVE_BOOKINGS_FOR_LISTING, bookings})
   )
 );
 //
