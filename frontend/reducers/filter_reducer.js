@@ -2,7 +2,7 @@ import { UPDATE_FILTER } from '../actions/filter_actions';
 // import { RECEIVE_LISTINGS, RECEIVE_LISTING } from '../actions/listing_actions';
 // import { CLOSE_MODAL } from '../actions/modal_actions.js';
 
-const filterReducer = (state = { bounds: {} }, action) => {
+const filterReducer = (state = { bounds: {}, maxGuests: 10 }, action) => {
   Object.freeze(state);
   switch (action.type) {
     case UPDATE_FILTER:

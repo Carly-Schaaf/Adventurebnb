@@ -25,8 +25,8 @@ class BookingIndexItem extends React.Component {
   render() {
     const { listing, booking } = this.props;
     if (listing === undefined) return null;
-    let arrivalDate = new Date(booking.arrivalDate);
-    let departureDate = new Date(booking.departureDate);
+    let arrivalDate = new Date(`${booking.arrivalDate} PST`);
+    let departureDate = new Date(`${booking.departureDate} PST`);
     let guests;
     (booking.numGuests === 1) ? guests = " guest" : guests = " guests";
     return(
