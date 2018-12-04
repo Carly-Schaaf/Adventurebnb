@@ -5,6 +5,7 @@ import LoginFormContainer from './login_form_container';
 import SignupFormContainer from './signup_form_container';
 import UpdateBookingContainer from '../booking/update_booking_container';
 import { withRouter } from 'react-router-dom';
+import GuestModal from '../search/guest_modal';
 
 const Modal = ({modal, currentUser, closeModal, history, listing, booking}) => {
   if (currentUser && history.location.pathname === '/') {
@@ -19,7 +20,6 @@ const Modal = ({modal, currentUser, closeModal, history, listing, booking}) => {
     return null;
   }
 
-  let component;
   switch (modal) {
     case 'login':
         return (
@@ -42,6 +42,25 @@ const Modal = ({modal, currentUser, closeModal, history, listing, booking}) => {
         <div className="modal-background calendar" onClick={closeModal}>
           <div className="modal-screen calendar" onClick={(e) => e.stopPropagation()}>
             <UpdateBookingContainer listing={ listing } booking={ booking } />
+          </div>
+        </div>
+      );
+    case 'price':
+      return (
+        <div className="modal-background price" onClick={closeModal}>
+          <div className="modal-screen price" onClick={(e) => e.stopPropagation()}>
+            <PriceModalContainer listing={ listing } booking={ booking } />
+          </div>
+        </div>
+      );
+    case 'guests':
+      return (
+        <div className="modal-background guests" onClick={
+            () => { closeModal();
+                    const modal = document.getElementsByClassName("filter-form");
+                    modal[0].classList.remove("remove-border");}}>
+          <div className="modal-screen guests" onClick={(e) => e.stopPropagation()}>
+            <GuestModal listing={ listing } booking={ booking } />
           </div>
         </div>
       );

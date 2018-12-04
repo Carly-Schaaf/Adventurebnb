@@ -4,7 +4,6 @@ import onClickOutside from "react-onclickoutside";
 import FilteredIndexContainer from './filtered_index_container';
 import { withRouter } from 'react-router-dom';
 import { changeFilter } from '../../actions/filter_actions';
-import FilterForm from './filter_form';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -64,11 +63,6 @@ class SearchBar extends React.Component {
 
 
   render() {
-    let renderFilters;
-    if (this.props.location.pathname === '/index' ||
-    this.props.location.search !== '') {
-      renderFilters = <FilterForm />;
-    }
     return(
       <form className="search-form" onSubmit={this.handleSubmit}>
         <div className="search-bar-box">
@@ -78,7 +72,6 @@ class SearchBar extends React.Component {
             placeholder="Search">
           </input>
         </div>
-        {renderFilters}
       </form>
     );
   }
