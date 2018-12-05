@@ -2,6 +2,12 @@ import React from 'react';
 
 class FilterForm extends React.Component {
 
+  // componentDidUpdate() {
+  //   // this.props.changeFilter("guests", 1);
+    // const guestBtn = document.getElementsByClassName("filter-btn");
+    // guestBtn[0].classList.remove("add-blue");
+  // }
+
   handleClick(e, type) {
     const modal = document.getElementsByClassName("filter-form");
     modal[0].className += " remove-border";

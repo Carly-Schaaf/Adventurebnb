@@ -7,8 +7,7 @@ import configureStore from './store/store';
 import Root from './components/root';
 import { login } from './actions/session_actions';
 import { fetchListing } from './actions/listing_actions';
-import { fetchBounds } from './actions/filter_actions';
-
+import { fetchBounds, changeFilter } from './actions/filter_actions';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
@@ -40,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // window.login = login;
   // window.getBounds = getBounds;
   // window.fetchBounds = fetchBounds;
-  
+  window.changeFilter = changeFilter;
   window.dispatch = store.dispatch;
   window.getState = store.getState;
   // Testing Purposes

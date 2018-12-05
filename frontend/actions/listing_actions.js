@@ -44,8 +44,8 @@ export const receiveHAVListings = (listings) => ({
   listings
 });
 
-export const fetchListings = (bounds) => (dispatch) => (
-  APIListing.fetchListings(bounds).then(
+export const fetchListings = (filters) => (dispatch) => (
+  APIListing.fetchListings(filters).then(
     listings => dispatch(receiveListings(listings)),
     errors => console.log(errors.responseJSON)
   )

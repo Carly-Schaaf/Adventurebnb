@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import SearchBar from '../search/search_bar';
 import FilterForm from './filter_form';
 
-const LoggedOutNavBar = ({ openModal, location }) => {
+const LoggedOutNavBar = ({ openModal, location, changeFilter, guests }) => {
     let renderFilters;
     if (location.pathname === '/index' ||
     location.search !== '') {
-      renderFilters = <FilterForm openModal={openModal} />;
+      renderFilters = <FilterForm openModal={openModal}
+        changeFilter={changeFilter} guests={guests} />;
     }
     return(
       <div className="nav-filter-container">

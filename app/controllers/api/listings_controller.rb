@@ -22,9 +22,9 @@ class Api::ListingsController < ApplicationController
   end
 
   def index
-    @listings = Listing.in_bounds(params[:bounds])
-    if params[:max_guests]
-      @listings = @listings.where('max_guests >= ?', params[:max_guests])
+    @listings = Listing.in_bounds(params[:filters][:bounds])
+    if params[:filters][:max_guests]
+      @listings = @listings.where('max_guests >= ?', params[:filters][:max_guests])
     end
     render :index
   end
