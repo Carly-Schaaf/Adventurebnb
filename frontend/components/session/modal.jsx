@@ -12,11 +12,11 @@ import { changeFilter } from '../../actions/filter_actions';
 
 class Modal extends React.Component {
 
-  handleClickOutside(e) {
-    this.props.closeModal();
-    const modal = document.getElementsByClassName("filter-form");
-    modal[0].classList.remove("remove-border");
-  }
+  // handleClickOutside(e) {
+  //   this.props.closeModal();
+  //   const modal = document.getElementsByClassName("filter-form");
+  //   modal[0].classList.remove("remove-border");
+  // }
 
   render() {
     const {modal, currentUser, closeModal, history, listing, booking, fetchListings,

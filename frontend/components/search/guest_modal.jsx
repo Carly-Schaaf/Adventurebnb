@@ -14,10 +14,14 @@ class GuestModal extends React.Component {
     this.subtractGuest = this.subtractGuest.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.guestBtn = document.getElementsByClassName("filter-btn")[0];
+    this.modal = document.getElementsByClassName("filter-form")[0];
+    this.handleClear = this.handleClear.bind(this);
   }
 
   handleClickOutside(e) {
     this.props.changeFilter("guests", this.int);
+    this.props.closeModal();
+    this.modal.classList.remove("remove-border");
   }
 
   subtractGuest(e) {
@@ -39,8 +43,16 @@ class GuestModal extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.changeFilter("guests", this.int);
-    const modal = document.getElementsByClassName("filter-form");
-    modal[0].classList.remove("remove-border");
+    this.modal.classList.remove("remove-border");
+    this.props.closeModal();
+  }
+
+  handleClear(e) {
+    e.preventDefault();
+    this.props.changeFilter("guests", 1);
+    this.modal.classList.remove("remove-border");
+    this.guestBtn.innerHTML = `Guests`;
+    this.guestBtn.classList.remove("add-blue");
     this.props.closeModal();
   }
 
@@ -75,7 +87,7 @@ class GuestModal extends React.Component {
           <br />
           <br />
           <div className="modal-btns-conatiner">
-            <button className="modal-cancel-btn">
+            <button className="modal-cancel-btn" onClick={this.handleClear}>
               Clear
             </button>
             <button className="modal-apply-btn" onClick={this.handleSubmit}>
