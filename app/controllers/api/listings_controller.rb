@@ -37,6 +37,9 @@ class Api::ListingsController < ApplicationController
 
   def select_by_city
     @listings = Listing.where(city: params[:city]).limit(4)
+    if params[:filters][:max_guests]
+      @listings = @listings.where('max_guests >= ?', params[:filters][:max_guests])
+    end
     render :index
   end
 

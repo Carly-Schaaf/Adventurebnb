@@ -78,7 +78,8 @@ class SearchBar extends React.Component {
 }
 
 const mapDispatchtoProps = dispatch => ({
-  changeFilter: (filter, value) => dispatch(changeFilter(filter, value))
+  changeFilter: (filter, value, getListings) =>
+  dispatch(changeFilter(filter, value, getListings))
 });
 
 export default withRouter(connect(null, mapDispatchtoProps)(SearchBar));

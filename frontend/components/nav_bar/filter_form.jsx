@@ -2,11 +2,15 @@ import React from 'react';
 
 class FilterForm extends React.Component {
 
-  // componentDidUpdate() {
-  //   // this.props.changeFilter("guests", 1);
-    // const guestBtn = document.getElementsByClassName("filter-btn");
-    // guestBtn[0].classList.remove("add-blue");
-  // }
+  componentDidMount() {
+    this.guestBtn = document.getElementsByClassName("filter-btn")[0];
+    if (this.props.guests) {
+      this.guestBtn.className += " add-blue";
+      this.html = "guests";
+      if (this.props.guests === 1) this.html = "guest";
+      this.guestBtn.innerHTML = `${this.props.guests} ${this.html}`;
+    }
+  }
 
   handleClick(e, type) {
     const modal = document.getElementsByClassName("filter-form");

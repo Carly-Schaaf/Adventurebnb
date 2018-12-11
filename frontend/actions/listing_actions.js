@@ -58,43 +58,43 @@ export const fetchListing = (listingId) => (dispatch) => (
   )
 );
 
-export const fetchCityListings = (city) => (dispatch) => (
-  APIListing.fetchListingByCity(city).then(
+export const fetchCityListings = (city) => (dispatch, getState) => (
+  APIListing.fetchListingByCity(city, getState().ui.filters).then(
     listings => dispatch(receiveListings(listings)),
     errors => console.log(errors.responseJSON)
   )
 );
 
-export const fetchSFListings = () => (dispatch) => (
-  APIListing.fetchListingByCity("San Francisco").then(
+export const fetchSFListings = () => (dispatch, getState) => (
+  APIListing.fetchListingByCity("San Francisco", getState().ui.filters).then(
     listings => dispatch(receiveSFListings(listings)),
     errors => console.log(errors.responseJSON)
   )
 );
 
-export const fetchNYListings = () => (dispatch) => (
-  APIListing.fetchListingByCity("New York").then(
+export const fetchNYListings = () => (dispatch, getState) => (
+  APIListing.fetchListingByCity("New York", getState().ui.filters).then(
     listings => dispatch(receiveNYListings(listings)),
     errors => console.log(errors.responseJSON)
   )
 );
 
-export const fetchLAListings = () => (dispatch) => (
-  APIListing.fetchListingByCity("Los Angeles").then(
+export const fetchLAListings = () => (dispatch, getState) => (
+  APIListing.fetchListingByCity("Los Angeles", getState().ui.filters).then(
     listings => dispatch(receiveLAListings(listings)),
     errors => console.log(errors.responseJSON)
   )
 );
 
-export const fetchTKListings = () => (dispatch) => (
-  APIListing.fetchListingByCity("Tokyo").then(
+export const fetchTKListings = () => (dispatch, getState) => (
+  APIListing.fetchListingByCity("Tokyo", getState().ui.filters).then(
     listings => dispatch(receiveTKListings(listings)),
     errors => console.log(errors.responseJSON)
   )
 );
 
-export const fetchHAVListings = () => (dispatch) => (
-  APIListing.fetchListingByCity("Havana").then(
+export const fetchHAVListings = () => (dispatch, getState) => (
+  APIListing.fetchListingByCity("Havana", getState().ui.filters).then(
     listings => dispatch(receiveHAVListings(listings)),
     errors => console.log(errors.responseJSON)
   )

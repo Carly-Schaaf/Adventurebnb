@@ -11,6 +11,16 @@ class MasterIndex extends React.Component {
     this.props.fetchHAVListings();
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.guests !== this.props.guests) {
+      this.props.fetchSFListings();
+      this.props.fetchLAListings();
+      this.props.fetchNYListings();
+      this.props.fetchTKListings();
+      this.props.fetchHAVListings();
+    }
+  }
+
   render() {
     const { sfListings,
             laListings,

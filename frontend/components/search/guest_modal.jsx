@@ -6,7 +6,7 @@ class GuestModal extends React.Component {
 
   constructor(props) {
     super(props);
-    this.int = this.props.guests;
+    this.int = this.props.guests || 1;
     this.state = {
       adults: `+${this.int}`
     };
@@ -19,37 +19,57 @@ class GuestModal extends React.Component {
   }
 
   handleClickOutside(e) {
-    this.props.changeFilter("guests", this.int);
+    let getListings = false;
+    if (this.props.location.pathname === "/listings") {
+      getListings = true;
+    }
+    this.props.changeFilter("guests", this.int, getListings);
     this.props.closeModal();
     this.modal.classList.remove("remove-border");
   }
 
   subtractGuest(e) {
     e.preventDefault();
-    this.guestBtn.className += " add-blue";
+    if (!this.guestBtn.classList.contains("add-blue")) {
+      this.guestBtn.className += " add-blue";
+    }
     this.int -= 1;
+    this.html = "guests";
+    if (this.int === 1) this.html = "guest";
     this.setState({adults: `+${this.int}`});
-    this.guestBtn.innerHTML = `${this.int} guests`;
+    this.guestBtn.innerHTML = `${this.int} ${this.html}`;
   }
 
   addGuest(e) {
     e.preventDefault();
-    this.guestBtn.className += " add-blue";
+    if (!this.guestBtn.classList.contains("add-blue")) {
+      this.guestBtn.className += " add-blue";
+    }
     this.int += 1;
+    this.html = "guests";
+    if (this.int === 1) this.html = "guest";
     this.setState({adults: `+${this.int}`});
-    this.guestBtn.innerHTML = `${this.int} guests`;
+    this.guestBtn.innerHTML = `${this.int} ${this.html}`;
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.changeFilter("guests", this.int);
+    let getListings = false;
+    if (this.props.location.pathname === "/listings") {
+      getListings = true;
+    }
+    this.props.changeFilter("guests", this.int, getListings);
     this.modal.classList.remove("remove-border");
     this.props.closeModal();
   }
 
   handleClear(e) {
     e.preventDefault();
-    this.props.changeFilter("guests", 1);
+    let getListings = false;
+    if (this.props.location.pathname === "/listings") {
+      getListings = true;
+    }
+    this.props.changeFilter("guests", 0, getListings);
     this.modal.classList.remove("remove-border");
     this.guestBtn.innerHTML = `Guests`;
     this.guestBtn.classList.remove("add-blue");

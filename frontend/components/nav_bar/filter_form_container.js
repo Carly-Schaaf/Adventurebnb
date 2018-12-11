@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
-import LoggedOutNavBar from './logged_out_navbar';
+import FilterForm from './filter_form';
 import { openModal } from '../../actions/modal_actions';
-import { withRouter } from 'react-router-dom';
 import { changeFilter } from '../../actions/filter_actions';
 
 const mapStateToProps = (state) => ({
@@ -14,4 +13,4 @@ const mapDispatchToProps = (dispatch) => ({
   dispatch(changeFilter(filter, value, getListings))
 });
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(LoggedOutNavBar));
+export default connect(mapStateToProps, mapDispatchToProps)(FilterForm);

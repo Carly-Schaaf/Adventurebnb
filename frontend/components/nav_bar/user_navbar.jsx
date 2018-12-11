@@ -4,11 +4,6 @@ import SearchBar from '../search/search_bar';
 import FilterForm from './filter_form';
 
 const UserNavBar = ({ logout, location }) => {
-  let renderFilters;
-  if (location.pathname === '/index' ||
-  location.search !== '') {
-    renderFilters = <FilterForm />;
-  }
   return(
     <div>
       <header className="nav-user-container">
@@ -22,7 +17,6 @@ const UserNavBar = ({ logout, location }) => {
               onClick={logout}>Logout</button></li>
           </ul>
         </header>
-      {renderFilters}
     </div>
 );};
 
