@@ -12,12 +12,6 @@ import { changeFilter } from '../../actions/filter_actions';
 
 class Modal extends React.Component {
 
-  // handleClickOutside(e) {
-  //   this.props.closeModal();
-  //   const modal = document.getElementsByClassName("filter-form");
-  //   modal[0].classList.remove("remove-border");
-  // }
-
   render() {
     const {modal, currentUser, closeModal, history, listing, booking, fetchListings,
     bounds, changeFilter, guests } = this.props;
@@ -97,4 +91,4 @@ const mapDispatchToProps = dispatch => ({
   dispatch(changeFilter(filter, value, getListings))
 });
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(onClickOutside(Modal)));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Modal));

@@ -18,9 +18,11 @@ const App = () => {
 
   <div>
     <ModalContainer />
-    <NavAuthRoute path="/" component={ UserNavBarContainer } />
-    <Route exact path="/index" component={ FilterFormContainer } />
-    <Route exact path="/listings" component={ FilterFormContainer } />
+    <div className="header-container">
+      <NavAuthRoute path="/" component={ UserNavBarContainer } />
+      <Route exact path="/index" component={ FilterFormContainer } />
+      <Route exact path="/listings" component={ FilterFormContainer } />
+    </div>
     <Switch>
       <Route path="/index" component={ MasterIndexContainer } />
       <Route exact path="/listings/:listingId" component={ ListingShowContainer } />

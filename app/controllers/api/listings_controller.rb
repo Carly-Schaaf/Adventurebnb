@@ -22,7 +22,7 @@ class Api::ListingsController < ApplicationController
   end
 
   def index
-    @listings = Listing.in_bounds(params[:filters][:bounds])
+    @listings = Listing.includes(:reviews).in_bounds(params[:filters][:bounds])
     if params[:filters][:max_guests]
       @listings = @listings.where('max_guests >= ?', params[:filters][:max_guests])
     end
@@ -36,7 +36,7 @@ class Api::ListingsController < ApplicationController
   end
 
   def select_by_city
-    @listings = Listing.where(city: params[:city]).limit(4)
+    @listings = Listing.includes(:reviews).where(city: params[:city]).limit(4)
     if params[:filters][:max_guests]
       @listings = @listings.where('max_guests >= ?', params[:filters][:max_guests])
     end

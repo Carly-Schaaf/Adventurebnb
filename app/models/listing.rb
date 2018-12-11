@@ -1,7 +1,13 @@
 require 'bigdecimal'
 
 class Listing < ApplicationRecord
-  validate :avg_accuracy, :avg_communication, :avg_cleanliness, :avg_location, :avg_checkin, :avg_value, :avg_total_review
+  validate :avg_accuracy,
+  :avg_communication,
+  :avg_cleanliness,
+  :avg_location,
+  :avg_checkin,
+  :avg_value,
+  :avg_total_review
   validate :num_reviews
 
   belongs_to :owner,
