@@ -18,6 +18,7 @@ class Listing < ApplicationRecord
 
   has_one_attached :photo
 
+
   def self.in_bounds(bounds)
     ne_lat = bounds[:northEast][:lat]
     ne_lng = bounds[:northEast][:lng]
