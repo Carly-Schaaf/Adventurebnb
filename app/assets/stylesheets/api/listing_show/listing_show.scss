@@ -64,28 +64,28 @@ i {
   height: 1.2em;
 }
 
-.amentity-icon {
+.amenity-icon {
   padding-right: 12px;
 }
 
-.amentity-detail {
+.amenity-detail {
   font-size: 16px;
   color: #484848;
   font-weight: normal;
   padding-bottom: 18px;
 }
 
-.amentity-detail li {
+.amenity-detail li {
   display: inline;
 }
 
-.amentity-outer-container {
+.amenity-outer-container {
   padding-top: 26px;
   border-top: 1px solid rgb(228, 228, 228);
   border-bottom: 1px solid rgb(228, 228, 228);
 }
 
-.amentity-title {
+.amenity-title {
   padding-bottom: 20px;
   font-size: 16px;
   line-height: 22px;
@@ -93,7 +93,7 @@ i {
   font-weight: 700;
 }
 
-.amentity-container {
+.amenity-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   padding-bottom: 15px;

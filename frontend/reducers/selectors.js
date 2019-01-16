@@ -2,7 +2,7 @@ import React from 'react';
 
 export const listingAmenities = (listing) => {
   if (listing === undefined) return null;
-  const amentityObj = {
+  const amenityObj = {
     "essentials": <i className="fas fa-shower"></i>,
     "wifi": <i className="fas fa-wifi"></i>,
     "tv": <i className="fas fa-tv"></i>,
@@ -26,10 +26,10 @@ export const listingAmenities = (listing) => {
   // cannot find icons for the above items
   };
   let myResult = [];
-  const allAmenities = Object.keys(amentityObj);
-  allAmenities.forEach(amentity => {
-    if (listing[amentity]) {
-      myResult.push({"title": amentity, "icon": amentityObj[amentity]});
+  const allAmenities = Object.keys(amenityObj);
+  allAmenities.forEach(amenity => {
+    if (listing[amenity]) {
+      myResult.push({"title": amenity, "icon": amenityObj[amenity]});
     }
   });
   return myResult.slice(0, 4);
