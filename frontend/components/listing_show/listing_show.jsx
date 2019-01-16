@@ -1,7 +1,7 @@
 import React from 'react';
 import ListingDetail from './listing_detail';
 import CalendarContainer from './calendar_container';
-import { listingAmentities } from '../../reducers/selectors';
+import { listingAmenities } from '../../reducers/selectors';
 
 class ListingShow extends React.Component {
 
@@ -13,13 +13,13 @@ class ListingShow extends React.Component {
   render() {
     const { listing, listingImg, submitButton, reviews, bookings } = this.props;
     if (listing === undefined) return null;
-    const amentities = listingAmentities(listing);
+    const amenities = listingAmenities(listing);
     return(
       <div className="listing-page">
         <img className="main-photo" src={listing.photo}></img>
         <div className="detail-container">
           <ListingDetail reviews={reviews} listing={ listing } listingImg={ listingImg }
-            amentities={ amentities } />
+            amenities={ amenities } />
           <CalendarContainer listing={ listing } reviews={ reviews }/>
         </div>
       </div>

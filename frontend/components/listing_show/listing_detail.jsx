@@ -1,10 +1,10 @@
 import React from 'react';
-import Amentities from './amentities';
+import Amenities from './amenities';
 import Review from './review';
 import { starCount } from '../../reducers/selectors';
 
 
-const ListingDetail = ({listing, listingImg, amentities, reviews}) => (
+const ListingDetail = ({listing, listingImg, amenities, reviews}) => (
 
       <div className="detail-description">
           <li className="item-type">{listing.homeType.toUpperCase()}</li>
@@ -13,8 +13,8 @@ const ListingDetail = ({listing, listingImg, amentities, reviews}) => (
         <p className="listing-description">
           {listing.description}
         </p>
-        <div className="listing-amentities">
-          <Amentities amentities={amentities} />
+        <div className="listing-amenities">
+          <Amenities amenities={amenities} />
         </div>
         <div className="listing-reviews">
           <div className="review-header">

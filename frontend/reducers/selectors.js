@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const listingAmentities = (listing) => {
+export const listingAmenities = (listing) => {
   if (listing === undefined) return null;
   const amentityObj = {
     "essentials": <i className="fas fa-shower"></i>,
@@ -26,8 +26,8 @@ export const listingAmentities = (listing) => {
   // cannot find icons for the above items
   };
   let myResult = [];
-  const allAmentities = Object.keys(amentityObj);
-  allAmentities.forEach(amentity => {
+  const allAmenities = Object.keys(amentityObj);
+  allAmenities.forEach(amentity => {
     if (listing[amentity]) {
       myResult.push({"title": amentity, "icon": amentityObj[amentity]});
     }

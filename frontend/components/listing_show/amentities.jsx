@@ -1,18 +1,18 @@
 import React from 'react';
 import AmentityDetail from './amentity_detail';
 
-const Amentities = ({amentities}) => {
-  const allAmentities = amentities.map((amentity, i) => (
+const Amenities = ({amenities}) => {
+  const allAmenities = amenities.map((amentity, i) => (
       <AmentityDetail amentity={amentity} key={i} />
   ));
   return (
   <div className="amentity-outer-container">
-    <div className="amentity-title">Amentities</div>
+    <div className="amentity-title">Amenities</div>
     <div className="amentity-container">
-      { allAmentities }
+      { allAmenities }
     </div>
   </div>
   );
 };
 
-export default Amentities;
+export default Amenities;
