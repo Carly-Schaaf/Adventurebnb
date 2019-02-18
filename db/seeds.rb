@@ -192,7 +192,7 @@ list5.photo.attach(io: list_photo_5, filename: '5.jpg')
 
 list27 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -217,7 +217,7 @@ list27.photo.attach(io: list_photo_27, filename: '27.jpg')
 
 list28 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -242,7 +242,7 @@ list28.photo.attach(io: list_photo_28, filename: '28.jpg')
 
 list29 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -267,7 +267,7 @@ list29.photo.attach(io: list_photo_29, filename: '29.jpg')
 
 list30 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -292,7 +292,7 @@ list30.photo.attach(io: list_photo_30, filename: '30.jpg')
 
 list31 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -317,7 +317,7 @@ list31.photo.attach(io: list_photo_31, filename: '31.jpg')
 
 list32 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -342,7 +342,7 @@ list32.photo.attach(io: list_photo_32, filename: '32.jpg')
 
 list33 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -367,7 +367,7 @@ list33.photo.attach(io: list_photo_33, filename: '33.jpg')
 
 list34 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -392,7 +392,7 @@ list34.photo.attach(io: list_photo_34, filename: '34.jpg')
 
 list35 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -542,7 +542,7 @@ list10.photo.attach(io: list_photo_10, filename: '10.jpg')
 
 list66 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -566,7 +566,7 @@ list66.photo.attach(io: list_photo_66, filename: '66.jpg')
 
 list67 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -591,7 +591,7 @@ list67.photo.attach(io: list_photo_67, filename: '67.jpg')
 
 list68 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -616,7 +616,7 @@ list68.photo.attach(io: list_photo_68, filename: '68.jpg')
 
 list69 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -641,7 +641,7 @@ list69.photo.attach(io: list_photo_69, filename: '69.jpg')
 
 list70 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -666,7 +666,7 @@ list70.photo.attach(io: list_photo_70, filename: '70.jpg')
 
 list71 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -691,7 +691,7 @@ list71.photo.attach(io: list_photo_71, filename: '71.jpg')
 
 list72 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -716,7 +716,7 @@ list72.photo.attach(io: list_photo_72, filename: '72.jpg')
 
 list73 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -741,7 +741,7 @@ list73.photo.attach(io: list_photo_73, filename: '73.jpg')
 
 list74 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -766,7 +766,7 @@ list74.photo.attach(io: list_photo_74, filename: '74.jpg')
 
 list75 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -912,7 +912,7 @@ list15.photo.attach(io: list_photo_15, filename: '15.jpg')
 
 list46 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -936,7 +936,7 @@ list46.photo.attach(io: list_photo_46, filename: '46.jpg')
 
 list47 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -961,7 +961,7 @@ list47.photo.attach(io: list_photo_47, filename: '47.jpg')
 
 list48 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -986,7 +986,7 @@ list48.photo.attach(io: list_photo_48, filename: '48.jpg')
 
 list49 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1011,7 +1011,7 @@ list49.photo.attach(io: list_photo_49, filename: '49.jpg')
 
 list50 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1036,7 +1036,7 @@ list50.photo.attach(io: list_photo_50, filename: '50.jpg')
 
 list51 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1061,7 +1061,7 @@ list51.photo.attach(io: list_photo_51, filename: '51.jpg')
 
 list52 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1086,7 +1086,7 @@ list52.photo.attach(io: list_photo_52, filename: '52.jpg')
 
 list53 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1111,7 +1111,7 @@ list53.photo.attach(io: list_photo_53, filename: '53.jpg')
 
 list54 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1136,7 +1136,7 @@ list54.photo.attach(io: list_photo_54, filename: '54.jpg')
 
 list55 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1283,7 +1283,7 @@ list20.photo.attach(io: list_photo_20, filename: '20.jpg')
 
 list36 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1307,7 +1307,7 @@ list36.photo.attach(io: list_photo_36, filename: '36.jpg')
 
 list37 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1332,7 +1332,7 @@ list37.photo.attach(io: list_photo_37, filename: '37.jpg')
 
 list38 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1358,7 +1358,7 @@ list38.photo.attach(io: list_photo_38, filename: '38.jpg')
 
 list39 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1384,7 +1384,7 @@ list39.photo.attach(io: list_photo_39, filename: '39.jpg')
 
 list40 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1410,7 +1410,7 @@ list40.photo.attach(io: list_photo_40, filename: '40.jpg')
 
 list41 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1435,7 +1435,7 @@ list41.photo.attach(io: list_photo_41, filename: '41.jpg')
 
 list42 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1461,7 +1461,7 @@ list42.photo.attach(io: list_photo_42, filename: '42.jpg')
 
 list43 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1487,7 +1487,7 @@ list43.photo.attach(io: list_photo_43, filename: '43.jpg')
 
 list44 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1513,7 +1513,7 @@ list44.photo.attach(io: list_photo_44, filename: '44.jpg')
 
 list45 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1660,7 +1660,7 @@ list26.photo.attach(io: list_photo_26, filename: '26.jpg')
 
 list56 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1684,7 +1684,7 @@ list56.photo.attach(io: list_photo_56, filename: '56.jpg')
 
 list57 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1707,7 +1707,7 @@ list57.photo.attach(io: list_photo_57, filename: '57.jpg')
 
 list58 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1731,7 +1731,7 @@ list58.photo.attach(io: list_photo_58, filename: '58.jpg')
 
 list59 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1755,7 +1755,7 @@ list59.photo.attach(io: list_photo_59, filename: '59.jpg')
 
 list60 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1780,7 +1780,7 @@ list60.photo.attach(io: list_photo_60, filename: '60.jpg')
 
 list61 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1805,7 +1805,7 @@ list61.photo.attach(io: list_photo_61, filename: '61.jpg')
 
 list62 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1830,7 +1830,7 @@ list62.photo.attach(io: list_photo_62, filename: '62.jpg')
 
 list63 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1855,7 +1855,7 @@ list63.photo.attach(io: list_photo_63, filename: '63.jpg')
 
 list64 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1880,7 +1880,7 @@ list64.photo.attach(io: list_photo_64, filename: '64.jpg')
 
 list65 = Listing.create(
   title: Faker::ElderScrolls.city,
-  description: Faker::Movie.quote,
+  description: Faker::GreekPhilosophers.quote,
   home_type: "Home",
   owner_id: 1,
   address_1: "1801 Franklin",
@@ -1931,7 +1931,7 @@ Booking.create(
 # REVIEWS
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 1,
   listing_id: 1,
   accuracy: 4,
@@ -1943,7 +1943,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 2,
   listing_id: 1,
   accuracy: 4,
@@ -1955,7 +1955,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 3,
   listing_id: 1,
   accuracy: 4,
@@ -1967,7 +1967,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 4,
   listing_id: 1,
   accuracy: 4,
@@ -1980,7 +1980,7 @@ Review.create(
 
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 4,
   listing_id: 15,
   accuracy: 4,
@@ -1992,7 +1992,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 3,
   listing_id: 2,
   accuracy: 4,
@@ -2004,7 +2004,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 3,
   listing_id: 3,
   accuracy: 4,
@@ -2016,7 +2016,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 1,
   listing_id: 3,
   accuracy: 4,
@@ -2028,7 +2028,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 1,
   listing_id: 4,
   accuracy: 4,
@@ -2040,7 +2040,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 4,
   listing_id: 4,
   accuracy: 4,
@@ -2052,7 +2052,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 2,
   listing_id: 15,
   accuracy: 4,
@@ -2065,7 +2065,7 @@ Review.create(
 
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 1,
   listing_id: 16,
   accuracy: 4,
@@ -2078,7 +2078,7 @@ Review.create(
 
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 1,
   listing_id: 17,
   accuracy: 4,
@@ -2090,7 +2090,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 4,
   listing_id: 16,
   accuracy: 4,
@@ -2102,7 +2102,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 2,
   listing_id: 17,
   accuracy: 4,
@@ -2114,7 +2114,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 1,
   listing_id: 18,
   accuracy: 4,
@@ -2127,7 +2127,7 @@ Review.create(
 
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 1,
   listing_id: 30,
   accuracy: 4,
@@ -2140,7 +2140,7 @@ Review.create(
 
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 2,
   listing_id: 18,
   accuracy: 4,
@@ -2153,7 +2153,7 @@ Review.create(
 
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 3,
   listing_id: 30,
   accuracy: 4,
@@ -2165,7 +2165,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 4,
   listing_id: 31,
   accuracy: 4,
@@ -2177,7 +2177,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 4,
   listing_id: 32,
   accuracy: 4,
@@ -2189,7 +2189,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 1,
   listing_id: 31,
   accuracy: 4,
@@ -2201,7 +2201,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 1,
   listing_id: 32,
   accuracy: 4,
@@ -2213,7 +2213,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 2,
   listing_id: 33,
   accuracy: 4,
@@ -2225,7 +2225,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 3,
   listing_id: 33,
   accuracy: 4,
@@ -2237,7 +2237,7 @@ Review.create(
 )
 
 Review.create(
-  body: Faker::Movie.quote,
+  body: Faker::GreekPhilosophers.quote,
   author_id: 4,
   listing_id: 60,
   accuracy: 4,

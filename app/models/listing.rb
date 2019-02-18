@@ -59,14 +59,36 @@ class Listing < ApplicationRecord
   end
 
   def avg_total_review
-    avg = 0;
-    avg += self.avg_accuracy
-    avg += self.avg_communication
-    avg += self.avg_cleanliness
-    avg += self.avg_location
-    avg += self.avg_checkin
-    avg += self.avg_value
-    return (avg/6).round(1)
+    avg_total_review = Listing.find_by_sql ["SELECT
+      (avg_accuracy +
+      avg_communication +
+      avg_cleanliness +
+      avg_location +
+      avg_checkin +
+      avg_value) AS avg_total_review
+      FROM
+        (SELECT AVG(accuracy) as avg_accuracy,
+        AVG(communication) as avg_communication,
+        AVG(cleanliness) as avg_cleanliness,
+        AVG(location) as avg_location,
+        AVG(check_in) as avg_checkin,
+        AVG(value) as avg_value
+        FROM listings JOIN reviews on listings.id = reviews.listing_id
+        WHERE listings.id = ?)
+    AS subquery", self.id]
+
+    avg_total_review = (avg_total_review.pluck(:avg_total_review)[0].to_f/6).round(1)
+
+    # avg = 0
+    # avg += self.avg_accuracy
+    # avg += self.avg_communication
+    # avg += self.avg_cleanliness
+    # avg += self.avg_location
+    # avg += self.avg_checkin
+    # avg += self.avg_value
+    # avg = (avg/6).round(1)
+    
+    return avg_total_review
   end
 
 end
