@@ -9,7 +9,8 @@ const mapStateToProps = (state, ownProps) => {
   return ({
     listing: state.entities.listings[ownProps.booking.listingId],
     booking: ownProps.booking,
-    formType: "Book"
+    formType: "Book",
+    ownProps
   });
 };
 

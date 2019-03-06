@@ -4,11 +4,19 @@
   padding: 32px;
   width: 441px;
   box-shadow: 0 16px 40px rgba(0,0,0,0.12);
-  height: 475px;
-  margin-left: 75px;
   position: absolute;
-  transform: translate(180%, 20%)
+  right: 0;
+  bottom: 0;
+  margin-right: 6vw;
+  margin-bottom: 26vh;
 }
+
+.search-box-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
 
 .search-bar-splash {
   padding: 17px;
@@ -22,10 +30,18 @@
 @media only screen and (max-width: 800px) {
      .search-box {
        width: 100%;
-       position: absolute;
-       transform: translate(0%, 80%);
-       margin-left: 0;
+       right: 0%;
+       bottom: 0%;
+       position: static;
      }
+
+     .search-box-container {
+       position: relative;
+       height: 100vh;
+       width: 100vw;
+       top: 30%;
+     }
+
      .entire-index {
        margin-top: 40px;
      }

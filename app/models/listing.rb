@@ -59,8 +59,8 @@ class Listing < ApplicationRecord
   end
 
   def avg_total_review
-    avg_total_review = Listing.find_by_sql ["SELECT
-      (avg_accuracy +
+    avg_total_review = Listing.find_by_sql [
+      "SELECT (avg_accuracy +
       avg_communication +
       avg_cleanliness +
       avg_location +
@@ -87,7 +87,7 @@ class Listing < ApplicationRecord
     # avg += self.avg_checkin
     # avg += self.avg_value
     # avg = (avg/6).round(1)
-    
+
     return avg_total_review
   end
 

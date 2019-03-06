@@ -1,10 +1,15 @@
 import React from 'react';
 import ListingIndex from './listing_index';
+import {BeatLoader} from 'react-spinners';
+
 
 class MasterIndex extends React.Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.state = {
+      loading: false
+    };
   }
 
   componentDidMount() {
@@ -12,7 +17,7 @@ class MasterIndex extends React.Component {
     this.props.fetchLAListings();
     this.props.fetchNYListings();
     this.props.fetchTKListings();
-    this.props.fetchHAVListings();
+    this.props.fetchHAVListings().then(() => this.setState({loading: true}));
   }
 
   componentDidUpdate(prevProps) {
@@ -43,6 +48,12 @@ class MasterIndex extends React.Component {
     }}
 
   render() {
+    if (!this.state.loading) {
+      return(
+        <div className="spinner-container">
+          <BeatLoader />
+        </div>
+      );}
     const { sfListings,
             laListings,
             nyListings,
@@ -66,7 +77,7 @@ class MasterIndex extends React.Component {
         <button onClick={(e) => this.handleSubmit(e, "Havana")}
           className="listing-row-title">Homes in Havana</button>
         <ListingIndex listings={ havListings }/>
-        
+
         <button onClick={(e) => this.handleSubmit(e, "New York")}
           className="listing-row-title">Homes in New York</button>
         <ListingIndex listings={ nyListings }/>

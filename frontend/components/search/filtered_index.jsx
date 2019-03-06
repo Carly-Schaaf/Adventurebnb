@@ -18,7 +18,10 @@ class FilteredIndex extends React.Component {
 
   render() {
     const listings = Object.values(this.props.listings);
-    if (listings[0] === undefined) return null;
+    if (listings[0] === undefined) {
+      return(
+        <BeatLoader />
+      );}
     return(
       <div className="entire-index">
         <div className="listing-row-title">

@@ -2,6 +2,8 @@ import React from 'react';
 import ListingDetail from './listing_detail';
 import CalendarContainer from './calendar_container';
 import { listingAmenities } from '../../reducers/selectors';
+import {BeatLoader} from 'react-spinners';
+
 
 class ListingShow extends React.Component {
 
@@ -13,19 +15,25 @@ class ListingShow extends React.Component {
 
   render() {
     const { listing, listingImg, submitButton, reviews, bookings } = this.props;
-    if (listing === undefined) return null;
-    const amenities = listingAmenities(listing);
-    return(
-      <div className="listing-page">
-        <img className="main-photo" src={listing.photo}></img>
-        <div className="detail-container">
-          <ListingDetail reviews={reviews} listing={ listing } listingImg={ listingImg }
-            amenities={ amenities } />
-          <CalendarContainer listing={ listing } reviews={ reviews }/>
+    if (listing === undefined) {
+      return(
+        <div className="spinner-container">
+          <BeatLoader />
         </div>
-      </div>
-    );
-  }
+      );}
+      const amenities = listingAmenities(listing);
+      return(
+        <div className="listing-page">
+          <img className="main-photo" src={listing.photo}></img>
+          <div className="detail-container">
+            <ListingDetail reviews={reviews} listing={ listing } listingImg={ listingImg }
+              amenities={ amenities } />
+            <CalendarContainer listing={ listing } reviews={ reviews }/>
+          </div>
+        </div>
+      );
+    }
+
 }
 
 export default ListingShow;

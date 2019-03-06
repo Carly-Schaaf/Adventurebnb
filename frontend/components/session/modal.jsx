@@ -76,14 +76,16 @@ class Modal extends React.Component {
 
 }}
 
-const mapStateToProps = state => ({
-  modal: state.ui.modal.modalType,
-  currentUser: state.session.id,
-  listing: state.ui.modal.listing,
-  booking: state.ui.modal.booking,
-  bounds: state.ui.filters.bounds,
-  guests: state.ui.filters.guests
-});
+const mapStateToProps = (state, ownProps) => {
+  return({
+    modal: state.ui.modal.modalType,
+    currentUser: state.session.id,
+    listing: state.ui.modal.listing,
+    booking: state.ui.modal.booking,
+    bounds: state.ui.filters.bounds,
+    guests: state.ui.filters.guests
+  });
+};
 
 const mapDispatchToProps = dispatch => ({
   closeModal: () => dispatch(closeModal()),

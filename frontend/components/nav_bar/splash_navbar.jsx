@@ -15,7 +15,7 @@ const SplashNavBar = ({ openModal }) => (
                 openModal("signup")}>Sign up</button>
           </nav>
         </header>
-        <div>
+        <div className="search-box-container">
           <SearchBox />
         </div>
       </div>
