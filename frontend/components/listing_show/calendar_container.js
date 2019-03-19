@@ -20,7 +20,7 @@ const mapStateToProps = ({ entities, session, errors }, ownProps) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   action: (booking, listingId) => dispatch(createBooking(booking, listingId)),
-  openModal: () => dispatch(openModal("signup")),
+  openModal: (type) => dispatch(openModal(type)),
   closeModal: () => dispatch(closeModal()),
   fetchBookings: (listingId) =>
   dispatch(requestBookingsForListing(listingId))

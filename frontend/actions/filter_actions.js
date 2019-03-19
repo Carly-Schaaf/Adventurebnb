@@ -11,7 +11,7 @@ export const updateFilter = (filter, value) => ({
 export function changeFilter(filter, value, getListings) {
   return (dispatch, getState) => {
     dispatch(updateFilter(filter, value));
-    if (getListings === true) {      
+    if (getListings === true) {
       return fetchListings(getState().ui.filters)(dispatch);
     }
   };

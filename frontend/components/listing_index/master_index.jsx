@@ -8,11 +8,17 @@ class MasterIndex extends React.Component {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
-      loading: false
+      loading: false,
     };
   }
 
   componentDidMount() {
+    window.addEventListener("resize", (e) => {
+      this.props.updateFilter(Math.floor(e.target.outerWidth/315));
+      console.log(Math.floor(e.target.outerWidth/315));
+    });
+    this.props.updateFilter(Math.floor(window.innerWidth/315));
+    console.log(Math.floor(window.innerWidth/315));
     this.props.fetchSFListings();
     this.props.fetchLAListings();
     this.props.fetchNYListings();
@@ -21,7 +27,7 @@ class MasterIndex extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.guests !== this.props.guests) {
+    if ((prevProps.guests !== this.props.guests) || prevProps.windowSize !== this.props.windowSize) {
       this.props.fetchSFListings();
       this.props.fetchLAListings();
       this.props.fetchNYListings();

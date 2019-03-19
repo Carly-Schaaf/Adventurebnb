@@ -24,10 +24,11 @@ class FilterForm extends React.Component {
     return(
       <form className="filter-form">
         <button className="filter-btn" onClick={(e) => this.handleClick(e, "guests")}>Guests</button>
-        <button className="filter-btn" onClick={(e) => this.handleClick(e, "price")}>Price</button>
       </form>
     );}
 
 }
 
 export default FilterForm;
+
+// <button className="filter-btn" onClick={(e) => this.handleClick(e, "price")}>Price</button>

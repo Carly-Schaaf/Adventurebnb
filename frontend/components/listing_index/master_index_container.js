@@ -6,7 +6,7 @@ import {
   fetchHAVListings,
   fetchTKListings } from '../../actions/listing_actions';
 import MasterIndex from './master_index';
-import { changeFilter } from '../../actions/filter_actions';
+import { changeFilter, updateFilter } from '../../actions/filter_actions';
 
 
 const mapStateToProps = (state) => ({
@@ -16,15 +16,17 @@ const mapStateToProps = (state) => ({
   tkListings: Object.values(state.entities.tkListings),
   havListings: Object.values(state.entities.havListings),
   reviews: state.entities.reviews,
-  guests: state.ui.filters.guests
+  guests: state.ui.filters.guests,
+  windowSize: state.ui.filters.windowSize
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchSFListings: () => dispatch(fetchSFListings()),
-  fetchLAListings: () => dispatch(fetchLAListings()),
-  fetchNYListings: () => dispatch(fetchNYListings ()),
-  fetchTKListings: () => dispatch(fetchTKListings()),
-  fetchHAVListings: () => dispatch(fetchHAVListings())
+  fetchSFListings: (num) => dispatch(fetchSFListings(num)),
+  fetchLAListings: (num) => dispatch(fetchLAListings(num)),
+  fetchNYListings: (num) => dispatch(fetchNYListings (num)),
+  fetchTKListings: (num) => dispatch(fetchTKListings(num)),
+  fetchHAVListings: (num) => dispatch(fetchHAVListings(num)),
+  updateFilter: (num) => dispatch(updateFilter("windowSize", num))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(MasterIndex);

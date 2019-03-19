@@ -1,13 +1,8 @@
 import React from 'react';
 import 'react-dates/initialize';
-import {
-        DateRangePicker,
-        SingleDatePicker,
-        DayPickerRangeController } from 'react-dates';
+import { DateRangePicker } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
 import '../../../app/assets/stylesheets/api/listing_show/date_picker.css';
-import momentPropTypes from 'react-moment-proptypes';
-import moment from 'moment';
 import { smallStarCount } from '../../reducers/selectors';
 
 
@@ -41,7 +36,7 @@ class Calendar extends React.Component {
         departure_date: this.state.departureDate ? this.state.departureDate._d : null,
         num_guests: this.state.numGuests}, this.state.listing.id);
     } else {
-      openModal();
+      openModal("signup");
     }
   }
 
@@ -60,16 +55,25 @@ class Calendar extends React.Component {
 
   isDayBooked(day) {
     const { bookings } = this.props;
-    let bookingArray = Object.values(bookings);
+    const bookingArray = Object.values(bookings);
     for (let i = 0; i < bookingArray.length; i++) {
-      let start = bookingArray[i].arrivalDate;
-      let end = bookingArray[i].departureDate;
+      const start = bookingArray[i].arrivalDate;
+      const end = bookingArray[i].departureDate;
       if (day.isBetween(start, end)) {
         return true;
       }
     }
     return false;
   }
+
+  // handleGuestClick() {
+  //   const { openModal } = this.props;
+  //   openModal("guests");
+  //   this.modalScreen = document.getElementsByClassName("modal-screen guests")[0];
+  //   this.modalScreen.classList.remove("guests");
+  //   this.modalScreen.classList += "calendar";
+  //   // this.guests =
+  // }
 
   render() {
     const { listing, maxGuests } = this.state;
@@ -122,6 +126,7 @@ class Calendar extends React.Component {
                 <option value="1" default>1 guest</option>
                 { guests }
               </select>
+              <input placeholder="1 guest" onClick={() => this.handleGuestClick()}></input>
             </label>
             <div>{this.displayErrors()}</div>
             <button className="session-submit request-btn" onClick={this.handleSubmit}>

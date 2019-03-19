@@ -36,7 +36,8 @@ class Api::ListingsController < ApplicationController
   end
 
   def select_by_city
-    @listings = Listing.with_attached_photo.includes(:reviews).where(city: params[:city]).limit(4)
+    @listings = Listing.with_attached_photo.includes(:reviews)
+    .where(city: params[:city]).limit(params[:filters][:num_entries])
     if params[:filters][:max_guests]
       @listings = @listings.where('max_guests >= ?', params[:filters][:max_guests])
     end
