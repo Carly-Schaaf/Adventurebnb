@@ -10,7 +10,7 @@ require 'faker'
 # USERS
 
 user1 = User.create(
-  username: "alice",
+  username: "CarlySchaaf",
   password: "starwars"
 )
 # user_photo_1 = EzDownload.open('https://s3-us-west-1.amazonaws.com/airbnb-clone-development/alice_photo.jpg')

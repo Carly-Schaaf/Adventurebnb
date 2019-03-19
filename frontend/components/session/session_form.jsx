@@ -19,12 +19,10 @@ class SessionForm extends React.Component {
     this.props.action(user);
   }
 
-  handleDemoSubmit(e) {
-    e.preventDefault();
-    const demoUser = {username: "alice", password: "starwars"};
-    let index = 0;
+  demoEffect(demoUser) {
     const that = this;
-    this.demoEffect = setInterval(() => {
+    let index = 0;
+    const demoIntervalId = setInterval(() => {
       if (index < demoUser.username.length) {
         that.setState({
           username: this.state.username + demoUser.username[index]
@@ -35,9 +33,9 @@ class SessionForm extends React.Component {
           password: this.state.password + demoUser.password[index]
         })
       }
-      index ++;
-      if (index > demoUser.password.length && index > demoUser.username.length ) {
-        clearInterval(this.demoEffect);
+      index++;
+      if (index > demoUser.password.length && index > demoUser.username.length) {
+        clearInterval(demoIntervalId);
         if (this.props.formSubmit === "Log in") {
           this.props.action(demoUser);
         } else {
@@ -45,6 +43,12 @@ class SessionForm extends React.Component {
         }
       }
     }, 300)
+  }
+
+  handleDemoSubmit(e) {
+    e.preventDefault();
+    const demoUser = {username: "CarlySchaaf", password: "starwars"};
+    this.demoEffect(demoUser);
   }
 
   displayErrors() {

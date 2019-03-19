@@ -13,12 +13,16 @@ class MasterIndex extends React.Component {
   }
 
   componentDidMount() {
+    let gridWidth;
     window.addEventListener("resize", (e) => {
-      this.props.updateFilter(Math.floor(e.target.outerWidth/315));
-      console.log(Math.floor(e.target.outerWidth/315));
+      gridWidth = e.target.innerWidth - 230;
+      this.props.updateFilter(Math.floor(gridWidth/300));
+      console.log(Math.floor(e.target.innerWidth/300));
+      console.log(e.target.innerWidth)
     });
-    this.props.updateFilter(Math.floor(window.innerWidth/315));
-    console.log(Math.floor(window.innerWidth/315));
+    gridWidth = window.innerWidth - 230;
+    this.props.updateFilter(Math.floor(gridWidth / 300));
+
     this.props.fetchSFListings();
     this.props.fetchLAListings();
     this.props.fetchNYListings();
