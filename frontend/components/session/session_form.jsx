@@ -42,7 +42,7 @@ class SessionForm extends React.Component {
           this.props.logIn(demoUser);
         }
       }
-    }, 300)
+    }, 200)
   }
 
   handleDemoSubmit(e) {
