@@ -1,11 +1,10 @@
 .splash-background {
   background: image-url("airbnb_splash.jpg") no-repeat center center;
-  // -webkit-background-size: cover;
-  // -mox-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
+  -webkit-background-size: cover;
+  -mox-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100vh;
-  width: 100vw;
 }
 
 .spinner-container {
