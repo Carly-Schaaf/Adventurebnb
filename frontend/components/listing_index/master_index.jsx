@@ -1,6 +1,8 @@
 import React from 'react';
 import ListingIndex from './listing_index';
 import {BeatLoader} from 'react-spinners';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 
 class MasterIndex extends React.Component {
@@ -9,19 +11,20 @@ class MasterIndex extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
       loading: false,
+      numPhotos: 4
     };
   }
 
   componentDidMount() {
-    let gridWidth;
+    let gridWidth, numPhotos;
     window.addEventListener("resize", (e) => {
       gridWidth = e.target.innerWidth - 230;
-      this.props.updateFilter(Math.floor(gridWidth/300));
-      console.log(Math.floor(e.target.innerWidth/300));
-      console.log(e.target.innerWidth)
+      numPhotos = Math.floor(gridWidth / 300);
+      this.setState({numPhotos: numPhotos})
     });
     gridWidth = window.innerWidth - 230;
-    this.props.updateFilter(Math.floor(gridWidth / 300));
+    numPhotos = Math.floor(gridWidth / 300);
+    this.setState({ numPhotos: numPhotos })
 
     this.props.fetchSFListings();
     this.props.fetchLAListings();
@@ -31,7 +34,7 @@ class MasterIndex extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    if ((prevProps.guests !== this.props.guests) || prevProps.windowSize !== this.props.windowSize) {
+    if ((prevProps.guests !== this.props.guests)) {
       this.props.fetchSFListings();
       this.props.fetchLAListings();
       this.props.fetchNYListings();
@@ -69,28 +72,29 @@ class MasterIndex extends React.Component {
             nyListings,
             tkListings,
             havListings } = this.props;
-
+    
     return(
+    
       <div className="entire-index">
         <button onClick={(e) => this.handleSubmit(e, "San Francisco")}
           className="listing-row-title">Homes in San Francisco</button>
-        <ListingIndex listings={ sfListings }/>
+        <ListingIndex listings={ sfListings.slice(0, this.state.numPhotos) }/>
 
         <button onClick={(e) => this.handleSubmit(e, "Los Angeles")}
           className="listing-row-title">Homes in Los Angeles</button>
-        <ListingIndex listings={ laListings }/>
+        <ListingIndex listings={ laListings.slice(0, this.state.numPhotos) }/>
 
         <button onClick={(e) => this.handleSubmit(e, "Tokyo")}
           className="listing-row-title">Homes in Tokyo</button>
-        <ListingIndex listings={ tkListings }/>
+        <ListingIndex listings={ tkListings.slice(0, this.state.numPhotos) }/>
 
         <button onClick={(e) => this.handleSubmit(e, "Havana")}
           className="listing-row-title">Homes in Havana</button>
-        <ListingIndex listings={ havListings }/>
+        <ListingIndex listings={ havListings.slice(0, this.state.numPhotos) }/>
 
         <button onClick={(e) => this.handleSubmit(e, "New York")}
           className="listing-row-title">Homes in New York</button>
-        <ListingIndex listings={ nyListings }/>
+        <ListingIndex listings={ nyListings.slice(0, this.state.numPhotos) }/>
       </div>
     );
   }

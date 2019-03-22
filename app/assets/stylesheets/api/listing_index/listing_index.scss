@@ -8,8 +8,6 @@
 .listings-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  // justify-content: center;
- // overflow: hidden;
   // change repeat to auto-fit if I want no more than 5 listings at most to show
 }
 

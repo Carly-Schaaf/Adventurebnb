@@ -17,7 +17,7 @@ const mapStateToProps = (state) => ({
   havListings: Object.values(state.entities.havListings),
   reviews: state.entities.reviews,
   guests: state.ui.filters.guests,
-  windowSize: state.ui.filters.windowSize
+  // windowSize: state.ui.filters.windowSize
 });
 
 const mapDispatchToProps = (dispatch) => ({

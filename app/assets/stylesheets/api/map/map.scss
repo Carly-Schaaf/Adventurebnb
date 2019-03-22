@@ -6,19 +6,19 @@
   margin-top: 8px;
   position: sticky !important;
   top: 145px !important;
+  z-index: -1 !important;
 }
 
 .filtered-index-by-map {
   float: left;
   width: 66%;
-  padding-bottom: 65px;
 }
 
 .entire-index.map {
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 30px;
-  padding-bottom: 0px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: row;
 }

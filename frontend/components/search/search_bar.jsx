@@ -69,7 +69,7 @@ class SearchBar extends React.Component {
           <i className="fas fa-search"></i>
           <input id="search-bar" value={this.state.input} onChange={this.setInput("input")}
             className="search-bar" type="text"
-            placeholder="Search">
+            placeholder={"Try \"Tokyo\""}>
           </input>
         </div>
       </form>
