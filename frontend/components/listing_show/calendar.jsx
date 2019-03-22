@@ -126,7 +126,7 @@ class Calendar extends React.Component {
                 <option value="1" default>1 guest</option>
                 { guests }
               </select>
-              <input placeholder="1 guest" onClick={() => this.handleGuestClick()}></input>
+              {/* <input placeholder="1 guest" onClick={() => this.handleGuestClick()}></input> */}
             </label>
             <div>{this.displayErrors()}</div>
             <button className="session-submit request-btn" onClick={this.handleSubmit}>
