@@ -47,6 +47,7 @@ class SearchBox extends React.Component {
     });
     google.maps.event.addDomListener(input, 'keydown', (e) => {
       if (e.keyCode == 13 && $('.pac-container:visible').length) {
+        this.setState({input: input.value})
         e.preventDefault();
       }
     }); 
