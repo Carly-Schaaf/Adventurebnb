@@ -8,6 +8,7 @@ require 'faker'
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # USERS
+User.destroy_all
 
 user1 = User.create(
   username: "CarlySchaaf",
@@ -42,6 +43,7 @@ user_photo_4 = File.open('app/assets/images/rika.jpg')
 user4.photo.attach(io: user_photo_4, filename: 'rika.jpg')
 
 # LISTINGS
+Listing.destroy_all
 
 guest_range = (1..16).to_a
 
@@ -1905,6 +1907,7 @@ list_photo_65 = File.open('app/assets/images/17.jpg')
 list65.photo.attach(io: list_photo_65, filename: '65.jpg')
 
 # BOOKINGS
+Booking.destroy_all
 
 Booking.create(
   guest_id: 1,
@@ -1931,6 +1934,7 @@ Booking.create(
 )
 
 # REVIEWS
+Review.destroy_all
 
 Review.create(
   body: Faker::GreekPhilosophers.quote,

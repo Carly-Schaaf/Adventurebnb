@@ -8,8 +8,7 @@ import {
         DayPickerRangeController } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
 import '../../../app/assets/stylesheets/api/listing_show/date_picker.css';
-import momentPropTypes from 'react-moment-proptypes';
-import moment from 'moment';
+
 
 class SearchBox extends React.Component {
   constructor(props) {
@@ -32,24 +31,29 @@ class SearchBox extends React.Component {
     const autocomplete = new google.maps.places.Autocomplete(input, options);
     google.maps.event.addDomListener(window, "load", autocomplete);
     let address;
-    autocomplete.addListener("place_changed", () => {
+    autocomplete.addListener("place_changed", (e) => {
+      e.preventDefault();
      if (!autocomplete.getPlace().formatted_address) {
        address = autocomplete.getPlace().name;
        this.setState({
          input: address
        });
-       this.handleSubmit();
      } else {
         address = autocomplete.getPlace().formatted_address;
         this.setState({
           input: address
         });
-        this.handleSubmit();
       }
     });
+    google.maps.event.addDomListener(input, 'keydown', (e) => {
+      if (e.keyCode == 13 && $('.pac-container:visible').length) {
+        e.preventDefault();
+      }
+    }); 
   }
 
   handleSubmit(e) {
+    e.preventDefault();
     const geocoder = new google.maps.Geocoder();
 
     geocoder.geocode({ address: this.state.input }, (results, status) => {
@@ -61,10 +65,6 @@ class SearchBox extends React.Component {
         this.props.history.push(`/listings?lat=34.019956&lng=-118.824270`);
       }
     });
-
-    if (e) {
-      e.preventDefault();
-    }
   }
 
   setInput(field) {
