@@ -8,15 +8,6 @@ class Search extends React.Component {
     super(props);
   }
 
-  // componentDidMount() {
-  //   this.grid = document.getElementsByClassName("listings-row")[0];
-  //   this.grid.classList.add("map");
-  // }
-
-  // componentWillUnmount() {
-  //   this.grid.classList.remove("map");
-  // }
-
   render() {
     const { listings, changeFilter, fetchListings } = this.props;
       return(
