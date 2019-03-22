@@ -6,7 +6,8 @@
   margin-top: 8px;
   position: sticky !important;
   top: 145px !important;
-  z-index: -1 !important;
+  // z-index: -1 !important;
+  // the above z-index fixes the styling overlay issue but causes the map to be unclickable
 }
 
 .filtered-index-by-map {
