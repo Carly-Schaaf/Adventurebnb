@@ -4,7 +4,7 @@
 
 Welcome to adventureBnB - my single-page clone of AirBnB. My web app includes many of the features that can be found on the real AirBnB. These include a search functionality with Google’s Maps API, the ability to explore over 60 listings in 5 different cities, as well as the option to book, edit, or cancel a booking at any of those listings.
 
-![alt text](https://user-images.githubusercontent.com/39382120/47235608-6bab3800-d38e-11e8-8635-e7a49581d360.png "Splash Page")
+![alt text](https://user-images.githubusercontent.com/39382120/54859657-2c7e6b80-4ccd-11e9-9f4b-ed4ae2436961.png "Splash Page")
 
 This splash page features a search bar that takes in any location and returns a map of listings in that location.
 
@@ -18,7 +18,7 @@ I built the above map functionality using Google’s Place Autocomplete API, Geo
 
 My listing view page enables logged-in users to book that listing. Users can only book if another user has not already booked that date, and can only book for the number of guests that the listing allows for. I built my calendar feature using AirBnB's own calendar library, React-Dates.
 
-![alt text](https://user-images.githubusercontent.com/39382120/47235631-7b2a8100-d38e-11e8-966c-1914a126642d.png "Bookings Page")
+![alt text](https://user-images.githubusercontent.com/39382120/54859680-8c751200-4ccd-11e9-82f2-8dbde9bcb34d.png "Bookings Page")
 
 Here, logged-in users can view their bookings and edit or cancel those bookings. The edit form pre-fills the user’s previous reservation information for their reference when editing.
 
