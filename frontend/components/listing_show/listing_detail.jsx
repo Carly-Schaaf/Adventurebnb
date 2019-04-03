@@ -23,7 +23,7 @@ const ListingDetail = ({listing, listingImg, amenities, reviews}) => (
             </div>
             <div className="stars-container">{starCount(listing.avgTotalReview)}</div>
           </div>
-          <div className="star-breakdown-cantainer">
+          <div className="star-breakdown-container">
             <div className="star-container">
               <li className="review-type">Accuracy</li>
               <li className="breakdown-star">{starCount(listing.avgAccuracy)}</li>

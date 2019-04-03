@@ -5,7 +5,8 @@
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials.google[:api_key]}&libraries=places" %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    
+  
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -18,3 +19,4 @@
     <%= yield %>
   </body>
 </html>
+

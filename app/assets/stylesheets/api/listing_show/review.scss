@@ -44,30 +44,38 @@
   margin-bottom: 25px;
 }
 
-.star-container li {
+.stars i {
   display: inline;
 }
 
 .star-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 140px));
+  // grid-template-columns: repeat(4, 1fr);
+  // grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    // grid-auto-flow: column;
+    // column-gap: 14px;
+
+  // at most, I want them to be 1fr, but at most I want them to be 1/4 fr
   width: 100%;
   padding-bottom: 15px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 750px) {
      .star-container {
        display: grid;
-       grid-template-columns: repeat(auto-fit, minmax(140px, 170px));
+       grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
      }
 }
+
+// .breakdown-star {
+//   padding-right: 45px;
+// }
 
 .review-type {
   font-size: 16px;
   color: #484848;
   font-weight: normal;
-  padding-right: 120px;
-  width: 500px;
 }
 
 .user-photo {

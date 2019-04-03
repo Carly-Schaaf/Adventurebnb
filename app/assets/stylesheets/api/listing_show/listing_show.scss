@@ -22,10 +22,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  // flex-shrink: 0;
   height: 100%;
   margin-top: 24px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 14%;
+  padding-right: 14%;
   color: #484848;
 }
 
@@ -33,12 +34,7 @@
   width: 60%;
 }
 
-@media only screen and (max-width: 800px) {
-     .detail-container {
-       padding-left: 50px;
-       padding-right: 50px;
-       justify-content: center;
-    }
+@media only screen and (max-width: 1308px) {
     .detail-description {
       width: 100%;
     }
