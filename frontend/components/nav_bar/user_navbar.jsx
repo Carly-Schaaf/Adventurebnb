@@ -12,6 +12,7 @@ const UserNavBar = ({ logout, location }) => {
           <li><SearchBar /></li>
         </div>
           <ul className="user-links-container">
+          <a className="github-a-tag" href="https://github.com/Carly-Schaaf" target="_blank"><img className="github-logo" src={window.images.github_icon} /></a>
             <Link to="/bookings/index"><li><button className="index-session-btn">Trips</button></li></Link>
             <li><button className="index-session-btn"
               onClick={logout}>Logout</button></li>

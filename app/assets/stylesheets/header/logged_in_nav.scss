@@ -13,6 +13,7 @@
   font-weight: 600;
   font-size: 14px;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .user-links-container li {
@@ -23,4 +24,13 @@
   position: sticky;
   top: 0px;
   z-index: 1;
+}
+
+.github-logo {
+  width: 19%;
+  padding-right: 11px;
+}
+
+.github-a-tag {
+  text-align: -webkit-right;
 }

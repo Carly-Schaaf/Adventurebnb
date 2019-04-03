@@ -12,6 +12,7 @@ const LoggedOutNavBar = ({ openModal, location, changeFilter, guests }) => {
             <SearchBar />
           </div>
             <nav className="nav-session-links-container">
+            <a className="github-a-tag" href="https://github.com/Carly-Schaaf" target="_blank"><img className="github-logo" src={window.images.github_icon} /></a>
               <button className="index-session-btn" onClick={() =>
                   openModal("login")}>Log in</button>
               <button className="index-session-btn" onClick={() =>
