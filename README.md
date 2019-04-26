@@ -47,9 +47,3 @@ Here, logged-in users can view their bookings and edit or cancel those bookings.
 * Search and browse living spaces by location utilizing Google Maps
 * Book living spaces
 * Edit reservations
-
-### To Do:
-
-* Add search filtering by availability, number of guests, and price
-* Add User Profiles
-* Add Messaging between spot owners and renters
