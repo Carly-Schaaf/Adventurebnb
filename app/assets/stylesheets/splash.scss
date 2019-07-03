@@ -1,4 +1,9 @@
+$my-font-family: courier;
+$my-font-color: black;
+
 .splash-background {
+  font-family: $my-font-family;
+  color: $my-font-color;
   background: image-url("airbnb_splash.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -mox-background-size: cover;

@@ -32,7 +32,7 @@ class Api::ListingsController < ApplicationController
   def show
     @listing = Listing.find(params[:id])
     @reviews = @listing.reviews
-    render 'api/listings/show'
+    render :show
   end
 
   def select_by_city

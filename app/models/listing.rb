@@ -79,15 +79,6 @@ class Listing < ApplicationRecord
 
     avg_total_review = (avg_total_review.pluck(:avg_total_review)[0].to_f/6).round(1)
 
-    # avg = 0
-    # avg += self.avg_accuracy
-    # avg += self.avg_communication
-    # avg += self.avg_cleanliness
-    # avg += self.avg_location
-    # avg += self.avg_checkin
-    # avg += self.avg_value
-    # avg = (avg/6).round(1)
-
     return avg_total_review
   end
 
