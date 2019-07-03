@@ -2,11 +2,11 @@
 
 [Live Link](https://myairbnbclone.herokuapp.com/)
 
-Welcome to adventureBnB - my single-page clone of AirBnB. My web app includes many of the features that can be found on the real AirBnB. These include a search functionality with Google’s Maps API, the ability to explore over 60 listings in 5 different cities, as well as the option to book, edit, or cancel a booking at any of those listings.
+Welcome to adventureBnB - my single-page clone of AirBnB. My web-app includes many of the features that can be found on the real AirBnB, including the ability to search for over 60 listings in 5 different cities, view their exact location via Google’s Maps API, and book, edit, or cancel a booking at any of these listings.
 
 ![alt text](https://user-images.githubusercontent.com/39382120/54859657-2c7e6b80-4ccd-11e9-9f4b-ed4ae2436961.png "Splash Page")
 
-This splash page features a search bar that takes in any location and returns a map of listings in that location.
+This splash page features a search bar that takes in a city, street, place, etc., and returns a map of listings in that location. The search bar works by converting user input into latitudinal and longitudinal coordinates (via Google's Geocoding API), which is then used as the center for the Google Map I create and display on the results page. Once this map is loaded, I use the latitudinal and longitudinal coordinates of the perimeter of the map to fetch any listings in my database that fall within this perimter. 
 
 ![alt text](https://user-images.githubusercontent.com/39382120/47235621-75cd3680-d38e-11e8-83c3-230cdc639ba6.png "Listings Page with Map")
 
@@ -16,27 +16,25 @@ I built the above map functionality using Google’s Place Autocomplete API, Geo
 
 ![alt text](https://user-images.githubusercontent.com/39382120/47235832-13c10100-d38f-11e8-9234-4996da49bad3.png "Listings Page")
 
-My listing view page enables logged-in users to book that listing. Users can only book if another user has not already booked that date, and can only book for the number of guests that the listing allows for. I built my calendar feature using AirBnB's own calendar library, React-Dates.
+My listing show-page enables logged-in users to book that listing. Users can only book if another user has not already booked that date or any overlapping dates, and only for the number of guests that the listing allows for. I built my calendar feature using AirBnB's own calendar library, React-Dates.
 
 ![alt text](https://user-images.githubusercontent.com/39382120/54859680-8c751200-4ccd-11e9-82f2-8dbde9bcb34d.png "Bookings Page")
 
-Here, logged-in users can view their bookings and edit or cancel those bookings. The edit form pre-fills the user’s previous reservation information for their reference when editing.
-
-
+Here, logged-in users can view their bookings as well as edit or cancel them. The edit-booking form pre-fills users' current reservation information for their reference when editing.
 
 ### Technologies used
  1.	Javascript
- 2.	Ruby on Rails for backend
+ 2.	Ruby on Rails
  3.	PostgreSQL
  4.	HTML
- 5.	CSS
+ 5.	SCSS/CSS
 
 ### Libraries used:
 
-* React.js
-* Redux
-* Moment.js
-* React-Dates - AirBnB engineering's own calendar library
+* React.js (incl. react-router-dom)
+* Redux (incl. react-redux, redux-thunk middleware)
+* jQuery for Ajax calls to my API
+* React-Dates - AirBnB engineering's calendar library
 * Google Map API, Google Places Autocomplete, Google Geocoding API
 * Bcrypt for user authorization
 * AWS S3 buckets to store user and listing photos
@@ -44,6 +42,7 @@ Here, logged-in users can view their bookings and edit or cancel those bookings.
 ### Features:
 
 * Sign up/log in with username & password
-* Search and browse living spaces by location utilizing Google Maps
+* Search and browse living spaces by location on Google Maps
 * Book living spaces
-* Edit reservations
+* Edit bookings
+* Read user reviews
