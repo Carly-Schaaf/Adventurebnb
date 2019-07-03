@@ -6,17 +6,17 @@ Welcome to adventureBnB - my single-page clone of AirBnB. My web-app includes ma
 
 ![alt text](https://user-images.githubusercontent.com/39382120/54859657-2c7e6b80-4ccd-11e9-9f4b-ed4ae2436961.png "Splash Page")
 
-This splash page features a search bar that takes in a city, street, place, etc., and returns a map of listings in that location. The search bar works by converting user input into latitudinal and longitudinal coordinates (via Google's Geocoding API), which is then used as the center for the Google Map I create and display on the results page. Once this map is loaded, I use the latitudinal and longitudinal coordinates of the perimeter of the map to fetch any listings in my database that fall within this perimter. 
+This splash page features a search bar that takes in a city, street, place, etc. (featuring Google's Place Autocomplete API), and returns a map of listings in that location. The search bar works by converting user input into latitudinal and longitudinal coordinates (via Google's Geocoding API), which is then used as the center for the Google Map I create and display on the results page. Once this map is loaded, I use the latitudinal and longitudinal coordinates of the perimeter of the map to fetch any listings in my database that fall within this perimter. 
 
 ![alt text](https://user-images.githubusercontent.com/39382120/47235621-75cd3680-d38e-11e8-83c3-230cdc639ba6.png "Listings Page with Map")
 
 ![alt text](./app/assets/images/carlygify.gif "Map Gif")
 
-I built the above map functionality using Google’s Place Autocomplete API, Geocoding API - to turn locations into coordinates - and the Maps API. Listings will dynamically appear and disappear based on the user's interaction with the map.
+I built the above map functionality using Google’s Geocoding API - to turn locations into coordinates - and the Google Maps API. Listings will dynamically appear and disappear based on the user's interaction with the map.
 
 ![alt text](https://user-images.githubusercontent.com/39382120/47235832-13c10100-d38f-11e8-9234-4996da49bad3.png "Listings Page")
 
-My listing show-page enables logged-in users to book that listing. Users can only book if another user has not already booked that date or any overlapping dates, and only for the number of guests that the listing allows for. I built my calendar feature using AirBnB's own calendar library, React-Dates.
+My listing show-page enables logged-in users to book that listing. Users can only book if another user has not already booked that date or any overlapping dates, and can only book for the number of guests that the listing allows for. I built my calendar feature using AirBnB's own calendar library, React-Dates.
 
 ![alt text](https://user-images.githubusercontent.com/39382120/54859680-8c751200-4ccd-11e9-82f2-8dbde9bcb34d.png "Bookings Page")
 
