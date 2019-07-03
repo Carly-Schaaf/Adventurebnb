@@ -14,7 +14,7 @@ This splash page features a search bar that takes in a city, street, place, etc.
 
 I built the above map functionality using Google’s Geocoding API - to turn locations into coordinates - and the Google Maps API. Listings will dynamically appear and disappear based on the user's interaction with the map.
 
-![alt text](https://user-images.githubusercontent.com/39382120/47235832-13c10100-d38f-11e8-9234-4996da49bad3.png "Listings Page")
+![alt text](https://user-images.githubusercontent.com/39382120/60606842-f000e800-9d70-11e9-8db2-b254baeac20a.png "Listings Page")
 
 My listing show-page enables logged-in users to book that listing. Users can only book if another user has not already booked that date or any overlapping dates, and can only book for the number of guests that the listing allows for. I built my calendar feature using AirBnB's own calendar library, React-Dates.
 
