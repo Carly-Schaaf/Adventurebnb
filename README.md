@@ -22,6 +22,8 @@ My listing show-page enables logged-in users to book that listing. Users can onl
 
 Here, logged-in users can view their bookings as well as edit or cancel them. The edit-booking form pre-fills users' current reservation information for their reference when editing.
 
+This project was designed and built in under two weeks.
+
 ### Technologies used
  1.	Javascript
  2.	Ruby on Rails
@@ -41,7 +43,7 @@ Here, logged-in users can view their bookings as well as edit or cancel them. Th
 
 ### Features:
 
-* Sign up/log in with username & password
+* Sign up & log in with username & password
 * Search and browse living spaces by location on Google Maps
 * Book living spaces
 * Edit bookings
