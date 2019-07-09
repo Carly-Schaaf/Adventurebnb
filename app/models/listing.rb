@@ -20,7 +20,6 @@ class Listing < ApplicationRecord
 
 
   def self.in_bounds(bounds)
-    alksdjflaksdjfasdfads
     ne_lat = bounds[:northEast][:lat]
     ne_lng = bounds[:northEast][:lng]
     sw_lat = bounds[:southWest][:lat]
