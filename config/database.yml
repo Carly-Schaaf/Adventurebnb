@@ -19,6 +19,7 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
+  url: <%= ENV['DATABASE_URL'] %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
@@ -80,6 +81,10 @@ test:
 #
 production:
   <<: *default
-  database: airBnB_clone_production
-  username: airBnB_clone
-  password: <%= ENV['AIRBNB_CLONE_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  host: db
+  username: postgres
+  password:
+  # database: airBnB_clone_production
+  # username: airBnB_clone
+  # password: <%= ENV['AIRBNB_CLONE_DATABASE_PASSWORD'] %>

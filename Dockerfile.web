@@ -1,0 +1,23 @@
+FROM ruby:2.5.5-alpine3.9
+
+RUN apk add --no-cache--update build-base \
+    linux-headers \
+    git \
+    postgresql-dev \
+    nodejs \
+    tzdata
+
+ARG DATABASE_URL="postgres://postgres@db"
+ARG RAILS_ENV=production
+
+WORKDIR /myapp
+COPY . /myapp 
+
+RUN gem install bundler && bundle install 
+
+COPY entrypoint.sh /usr/bin/
+RUN chmod +x /usr/bind/entrypoint.sh
+
+EXPOSE 3000
+
+CMD ["rails", "server", "-b", "0.0.0.0"]
