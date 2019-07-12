@@ -1,0 +1,30 @@
+version: "3"
+services: 
+  db: 
+    image: postgres
+    volumes: 
+      - ./tmp/db:/var/lib/postgresql/data
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    
+    image: cschaaf1993/adventurebnb-web
+    volumes: 
+      - .:/myapp
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://postgres@db
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    image: cschaaf1993/adventurebnb-frontend
+    volumes:
+      - ".:/usr/src/app"
+      - "/usr/src/app/node_modules"
+    environment:
+      - NODE_ENV=development

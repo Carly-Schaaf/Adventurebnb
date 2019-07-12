@@ -22,7 +22,10 @@
     "redux-thunk": "^2.3.0",
     "url-loader": "^1.1.2",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "css-loader": "^1.0.0",
+    "react-onclickoutside": "^6.7.1",
+    "style-loader": "^0.23.1"
   },
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "version": "1.0.0",
@@ -34,6 +37,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --watch --mode=development",
+    "start": "webpack --mode=development",
     "postinstall": "webpack"
   },
   "repository": {
@@ -52,8 +56,6 @@
   },
   "homepage": "https://github.com/Carly-Schaaf/AirBnb-Full-Stack-Clone#readme",
   "devDependencies": {
-    "css-loader": "^1.0.0",
-    "react-onclickoutside": "^6.7.1",
-    "style-loader": "^0.23.1"
+    
   }
 }

@@ -1,6 +1,6 @@
 FROM ruby:2.5.5-alpine3.9
 
-RUN apk add --no-cache--update build-base \
+RUN apk add --no-cache --update build-base \
     linux-headers \
     git \
     postgresql-dev \
@@ -11,12 +11,12 @@ ARG DATABASE_URL="postgres://postgres@db"
 ARG RAILS_ENV=production
 
 WORKDIR /myapp
-COPY . /myapp 
+COPY ./Gemfile /myapp/Gemfile
 
-RUN gem install bundler && bundle install 
+RUN gem install bundler && bundle install
 
 COPY entrypoint.sh /usr/bin/
-RUN chmod +x /usr/bind/entrypoint.sh
+RUN chmod +x /usr/bin/entrypoint.sh
 
 EXPOSE 3000
 
