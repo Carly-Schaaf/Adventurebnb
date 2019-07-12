@@ -7,17 +7,18 @@ RUN apk add --no-cache --update build-base \
     nodejs \
     tzdata
 
-ARG DATABASE_URL="postgres://postgres@db"
-ARG RAILS_ENV=production
+ENV DATABASE_URL="postgres://postgres@db"
+ENV RAILS_ENV=production
 
 WORKDIR /myapp
 COPY ./Gemfile /myapp/Gemfile
 
 RUN gem install bundler
 RUN bundle install
+
+COPY . /myapp
+
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 
-EXPOSE 3000
-
-CMD ["rails", "server", "-b", "0.0.0.0"]
+CMD rails server -b 0.0.0.0 -p $PORT

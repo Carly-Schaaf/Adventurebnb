@@ -9,8 +9,6 @@ services:
       context: .
       dockerfile: Dockerfile.web
     image: cschaaf1993/adventurebnb-web
-    volumes: 
-      - .:/myapp
     ports:
       - "3000:3000"
     depends_on:
