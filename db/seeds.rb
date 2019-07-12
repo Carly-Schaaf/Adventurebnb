@@ -1939,7 +1939,7 @@ Review.destroy_all
 Review.create(
   body: Faker::GreekPhilosophers.quote,
   author_id: user1.id,
-  listing_id: Listing.order('RANDOM()').first.id,
+  listing_id: list1.id,
   accuracy: 4,
   communication: 4,
   cleanliness: 4,
@@ -1951,7 +1951,7 @@ Review.create(
 Review.create(
   body: Faker::GreekPhilosophers.quote,
   author_id: user2.id,
-  listing_id: Listing.order('RANDOM()').first.id,
+  listing_id: list1.id,
   accuracy: 4,
   communication: 4,
   cleanliness: 4,
@@ -1963,7 +1963,7 @@ Review.create(
 Review.create(
   body: Faker::GreekPhilosophers.quote,
   author_id: user3.id,
-  listing_id: Listing.order('RANDOM()').first.id,
+  listing_id: list1.id,
   accuracy: 4,
   communication: 4,
   cleanliness: 4,
@@ -1975,7 +1975,7 @@ Review.create(
 Review.create(
   body: Faker::GreekPhilosophers.quote,
   author_id: user4.id,
-  listing_id: Listing.order('RANDOM()').first.id,
+  listing_id: list1.id,
   accuracy: 4,
   communication: 4,
   cleanliness: 4,
