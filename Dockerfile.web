@@ -1,4 +1,4 @@
-FROM ruby:2.4-alpine3.9
+FROM ruby:2.5.5-alpine3.9
 
 RUN apk add --no-cache --update build-base \
     linux-headers \
@@ -13,8 +13,8 @@ ARG RAILS_ENV=production
 WORKDIR /myapp
 COPY ./Gemfile /myapp/Gemfile
 
-RUN gem install bundler && bundle install
-
+RUN gem install bundler
+RUN bundle install
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 
