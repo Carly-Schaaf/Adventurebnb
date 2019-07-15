@@ -16,7 +16,7 @@ COPY ./Gemfile /myapp/Gemfile
 RUN gem install bundler
 RUN bundle install
 
-COPY . /myapp
+COPY . /app
 
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
