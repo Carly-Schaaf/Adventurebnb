@@ -85,6 +85,7 @@ production:
   host: db
   username: postgres
   password:
+  # the below lines are running in production without docker
   # database: airBnB_clone_production
   # username: airBnB_clone
   # password: <%= ENV['AIRBNB_CLONE_DATABASE_PASSWORD'] %>
