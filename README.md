@@ -1,4 +1,4 @@
-## adventureBnb
+## Adventurebnb
 
 [Live Link](https://adventurebnb.herokuapp.com/#/)
 
