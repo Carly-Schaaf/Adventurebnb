@@ -1,6 +1,6 @@
 ## adventureBnb
 
-[Live Link](https://myairbnbclone.herokuapp.com/)
+[Live Link](https://adventurebnb.herokuapp.com/#/)
 
 Welcome to adventureBnB - my single-page clone of AirBnB. My web-app includes many of the features that can be found on the real AirBnB, including the ability to search for over 60 listings in 5 different cities, view their exact location via Google’s Maps API, and book, edit, or cancel a booking at any of these listings.
 
