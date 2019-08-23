@@ -1912,24 +1912,24 @@ Booking.create(
   guest_id: user1.id,
   listing_id: Listing.order('RANDOM()').first.id,
   num_guests: 1,
-  arrival_date: "20181030",
-  departure_date: "20181118"
+  arrival_date: DateTime.now + 2,
+  departure_date: DateTime.now + 18
 )
 
 Booking.create(
   guest_id: user1.id,
   listing_id: Listing.order('RANDOM()').first.id,
   num_guests: 1,
-  arrival_date: "20180905",
-  departure_date: "20180918"
+  arrival_date: DateTime.now + 50,
+  departure_date: DateTime.now + 53
 )
 
 Booking.create(
   guest_id: user1.id,
   listing_id: Listing.order('RANDOM()').first.id,
   num_guests: 1,
-  arrival_date: "20190105",
-  departure_date: "20190118"
+  arrival_date: DateTime.now + 10,
+  departure_date: DateTime.now + 11
 )
 
 # REVIEWS
