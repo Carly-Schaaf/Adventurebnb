@@ -9,6 +9,8 @@ services:
       context: .
       dockerfile: Dockerfile.web
     image: cschaaf1993/adventurebnb:web
+    volumes: 
+      - static-content:/myapp/frontend
     ports:
       - "3000:3000"
     depends_on:
@@ -21,7 +23,10 @@ services:
       dockerfile: Dockerfile.frontend
     image: cschaaf1993/adventurebnb:frontend
     volumes:
-      - ".:/usr/src/app"
-      - "/usr/src/app/node_modules"
+      - static-content:/usr/src/app/frontend
+    command: npm run webpack
     environment:
       - NODE_ENV=development
+
+volumes:
+  static-content:

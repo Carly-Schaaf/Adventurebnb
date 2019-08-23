@@ -49,8 +49,7 @@ guest_range = (1..16).to_a
 
 list1 = Listing.create(
   title: "Home in Marin Headlands",
-  description: "Beautiful secluded cottage in Marin. Escape the city sounds
-  and find peace.",
+  description: "Beautiful secluded cottage in Marin. Escape the city sounds and find peace.",
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -166,8 +165,8 @@ list_photo_4 = File.open('app/assets/images/4.jpg')
 list4.photo.attach(io: list_photo_4, filename: '4.jpg')
 
 list5 = Listing.create(
-  title: "Grand and Cozy 1920's SF Studio",
-  description: "Come enjoy our large studio in San Francisco's charming and convenient Bernal Heights! You'll enjoy your own cozy and private lodging with a romantic gas fireplace, wood and stone floors and artistic decor. You will be close to world class views of San Francisco and it's beautiful bay. Bus lines are close by and and parking is very easy!",
+  title: "Modern Cabin With Alpine Views",
+  description: "You'll enjoy your own cozy and private lodging with a romantic gas fireplace, wood and stone floors and artistic decor. Please note, this lodging requires a 12-hour back-country ski trip to access the premises - fun!",
   home_type: "Apartment",
   owner_id: user1.id,
   address_1: "1801 Franklin",

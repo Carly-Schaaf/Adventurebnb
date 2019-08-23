@@ -87,7 +87,7 @@ class SearchBox extends React.Component {
         Book unique homes
         </div>
         <form className="search-form" onSubmit={this.handleSubmit}>
-            <label className="search-box-label" for="search-bar">WHERE</label>
+            <label className="search-box-label" htmlFor="search-bar">WHERE</label>
             <div className="search-box-input">
               <input id="search-bar-splash" value={this.state.input} onChange={this.setInput("input")}
                 className="box-input" type="text"

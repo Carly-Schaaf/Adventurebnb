@@ -64,7 +64,7 @@ class MasterIndex extends React.Component {
     if (!this.state.loading) {
       return(
         <div className="spinner-container">
-          <BeatLoader />
+          <BeatLoader style={{backgroundColor: "red"}}/>
         </div>
       )
       ;}

@@ -5,6 +5,8 @@ ruby '2.5.5'
 gem 'ez_download', '~> 0.2.0'
 gem 'faker'
 gem "aws-sdk-s3"
+gem 'aws-partitions', '~> 1.203'
+gem 'aws-sdk-core', '~> 3.63'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Use postgresql as the database for Active Record
