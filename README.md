@@ -48,7 +48,7 @@ This project was designed and built in under two weeks.
 ### Features:
 
 * Sign up & log in with username & password
-* Search and browse living spaces by location on Google Maps
+* Browse living spaces by location on Google Maps
 * Book living spaces
 * Edit bookings
 * Read user reviews
