@@ -77,9 +77,9 @@ class Listing < ApplicationRecord
         WHERE listings.id = ?)
     AS subquery", self.id]
 
-    avg_total_review = (avg_total_review.pluck(:avg_total_review)[0].to_f/6).round(1)
-
-    return avg_total_review
+    return (avg_total_review.pluck(:avg_total_review)[0].to_f/6).round(1)
   end
 
+
+  
 end
