@@ -10,9 +10,13 @@ The search feature works by converting user input into latitudinal and longitudi
 
 ![Listings Page with Map](https://user-images.githubusercontent.com/39382120/47235621-75cd3680-d38e-11e8-83c3-230cdc639ba6.png "Listings Page with Map")
 
+I built the map feature using the Google Maps API and Google’s Geocoding API - to turn locations into coordinates. Listings will dynamically appear and disappear based on the user's interaction with the map.
+
 ![Map Gif](./app/assets/images/carlygify.gif "Map Gif")
 
-I built the above map functionality using Google’s Geocoding API - to turn locations into coordinates - as well as the Google Maps API. Listings will dynamically appear and disappear based on the user's interaction with the map.
+I wrote the following SQL query in order to fetch a home and its average total rating across 6 different rating categories with just one database query, significantly improving the loading time of the homes index page.
+
+![Code Snippet of SQL Query](https://user-images.githubusercontent.com/39382120/63602605-ad8fa680-c57c-11e9-8618-73f27e53cfa5.png)
 
 ![Listings Page](https://user-images.githubusercontent.com/39382120/60606842-f000e800-9d70-11e9-8db2-b254baeac20a.png "Listings Page")
 
@@ -21,10 +25,6 @@ My listing show-page enables logged-in users to book a listing. Users can only b
 ![Bookings Page](https://user-images.githubusercontent.com/39382120/54859680-8c751200-4ccd-11e9-82f2-8dbde9bcb34d.png "Bookings Page")
 
 Above, logged-in users can view their bookings as well as edit or cancel them. The edit-booking form pre-fills users' current reservation information for their reference when editing.
-
-![Code Snippet of SQL Query](https://user-images.githubusercontent.com/39382120/63602605-ad8fa680-c57c-11e9-8618-73f27e53cfa5.png)
-
-I wrote the above SQL query in order to fetch a home and its average total rating across 6 different rating categories with just one database query, significantly improving the loading time of the homes index page.
 
 This project was designed and built in under two weeks.
 
