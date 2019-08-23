@@ -55,7 +55,7 @@ export const starCount = (int) => {
 
 export const smallStarCount = (int) => {
   const roundedReview = Math.floor(int);
-  const partialStar = int - roundedReview;
+  let partialStar = int - roundedReview;
   const stars = Array(5).fill().map((star, i)=> {
     if (i < roundedReview) {
       return(
@@ -65,6 +65,7 @@ export const smallStarCount = (int) => {
         </i>
       </li>);
     } else if (partialStar !== 0 ) {
+      partialStar = 0;
       return(
         <li key={Math.random()} className="small-stars">
           <i className="material-icons small">

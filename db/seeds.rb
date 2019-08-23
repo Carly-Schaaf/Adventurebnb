@@ -196,7 +196,7 @@ list5.photo.attach(io: list_photo_5, filename: '5.jpg')
 
 list27 = Listing.create(
   title: Faker::Name.name,
-  description: Faker::GreekPhilosophers.quote,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -220,8 +220,8 @@ list27.photo.attach(io: list_photo_27, filename: '27.jpg')
 
 
 list28 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -245,8 +245,8 @@ list28.photo.attach(io: list_photo_28, filename: '28.jpg')
 
 
 list29 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -270,8 +270,8 @@ list29.photo.attach(io: list_photo_29, filename: '29.jpg')
 
 
 list30 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -295,8 +295,8 @@ list30.photo.attach(io: list_photo_30, filename: '30.jpg')
 
 
 list31 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -320,8 +320,8 @@ list31.photo.attach(io: list_photo_31, filename: '31.jpg')
 
 
 list32 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -345,8 +345,8 @@ list32.photo.attach(io: list_photo_32, filename: '32.jpg')
 
 
 list33 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -370,8 +370,8 @@ list33.photo.attach(io: list_photo_33, filename: '33.jpg')
 
 
 list34 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -395,8 +395,8 @@ list34.photo.attach(io: list_photo_34, filename: '34.jpg')
 
 
 list35 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -419,7 +419,7 @@ list_photo_35 = File.open('app/assets/images/14.jpg')
 list35.photo.attach(io: list_photo_35, filename: '35.jpg')
 
 list6 = Listing.create(
-  title: "Charming Craftsman with Outdoor Shower",
+  title: Faker::Address.community,
   description: "Live in a garden oasis in the middle of Venice Beach. Featuring vine-covered interior walls, a brick patio with lounge chairs, and a delightful outdoor shower, this unique guest house is nestled in the sunny backyard of a larger Craftsman home.",
   home_type: "Home",
   owner_id: user1.id,
@@ -448,7 +448,7 @@ list_photo_6 = File.open('app/assets/images/6.jpg')
 list6.photo.attach(io: list_photo_6, filename: '6.jpg')
 
 list7 = Listing.create(
-  title: "Charming Craftsman with Outdoor Shower",
+  title: Faker::Address.community,
   description: "Live in a garden oasis in the middle of Venice Beach. Featuring vine-covered interior walls, a brick patio with lounge chairs, and a delightful outdoor shower, this unique guest house is nestled in the sunny backyard of a larger Craftsman home.",
   home_type: "Home",
   owner_id: user1.id,
@@ -472,7 +472,7 @@ list_photo_7 = File.open('app/assets/images/7.jpg')
 list7.photo.attach(io: list_photo_7, filename: '7.jpg')
 
 list8 = Listing.create(
-  title: "Charming Craftsman with Outdoor Shower",
+  title: Faker::Address.community,
   description: "Live in a garden oasis in the middle of Venice Beach. Featuring vine-covered interior walls, a brick patio with lounge chairs, and a delightful outdoor shower, this unique guest house is nestled in the sunny backyard of a larger Craftsman home.",
   home_type: "Home",
   owner_id: user1.id,
@@ -497,7 +497,7 @@ list_photo_8 = File.open('app/assets/images/8.jpg')
 list8.photo.attach(io: list_photo_8, filename: '8.jpg')
 
 list9 = Listing.create(
-  title: "Charming Craftsman with Outdoor Shower",
+  title: Faker::Address.community,
   description: "Live in a garden oasis in the middle of Venice Beach. Featuring vine-covered interior walls, a brick patio with lounge chairs, and a delightful outdoor shower, this unique guest house is nestled in the sunny backyard of a larger Craftsman home.",
   home_type: "Home",
   owner_id: user1.id,
@@ -521,7 +521,7 @@ list_photo_9 = File.open('app/assets/images/9.jpg')
 list9.photo.attach(io: list_photo_9, filename: '9.jpg')
 
 list10 = Listing.create(
-  title: "Charming Craftsman with Outdoor Shower",
+  title: Faker::Address.community,
   description: "Live in a garden oasis in the middle of Venice Beach. Featuring vine-covered interior walls, a brick patio with lounge chairs, and a delightful outdoor shower, this unique guest house is nestled in the sunny backyard of a larger Craftsman home.",
   home_type: "Home",
   owner_id: user1.id,
@@ -545,8 +545,8 @@ list_photo_10 = File.open('app/assets/images/10.jpg')
 list10.photo.attach(io: list_photo_10, filename: '10.jpg')
 
 list66 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -569,8 +569,8 @@ list_photo_66 = File.open('app/assets/images/11.jpg')
 list66.photo.attach(io: list_photo_66, filename: '66.jpg')
 
 list67 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -594,8 +594,8 @@ list67.photo.attach(io: list_photo_67, filename: '67.jpg')
 
 
 list68 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -619,8 +619,8 @@ list68.photo.attach(io: list_photo_68, filename: '68.jpg')
 
 
 list69 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -644,8 +644,8 @@ list69.photo.attach(io: list_photo_69, filename: '69.jpg')
 
 
 list70 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -669,8 +669,8 @@ list70.photo.attach(io: list_photo_70, filename: '70.jpg')
 
 
 list71 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -694,8 +694,8 @@ list71.photo.attach(io: list_photo_71, filename: '71.jpg')
 
 
 list72 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -719,8 +719,8 @@ list72.photo.attach(io: list_photo_72, filename: '72.jpg')
 
 
 list73 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -744,8 +744,8 @@ list73.photo.attach(io: list_photo_73, filename: '73.jpg')
 
 
 list74 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -769,8 +769,8 @@ list74.photo.attach(io: list_photo_74, filename: '74.jpg')
 
 
 list75 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -795,7 +795,7 @@ list75.photo.attach(io: list_photo_75, filename: '75.jpg')
 # # TOKYO
 
 list11 = Listing.create(
-  title: "Shibuya House w/Garden",
+  title: Faker::Address.community,
   description: "Our comfortable, bright, clean and warm house surrounded by green is located close to Shibuya, Harajuku, Omotesando and Shinjuku! We provide you with info on best restaurants, areas, history and entertainments that only locals know in Tokyo",
   home_type: "Home",
   owner_id: user1.id,
@@ -819,7 +819,7 @@ list_photo_11 = File.open('app/assets/images/11.jpg')
 list11.photo.attach(io: list_photo_11, filename: '11.jpg')
 
 list12 = Listing.create(
-  title: "Shibuya House w/Garden",
+  title: Faker::Address.community,
   description: "Our comfortable, bright, clean and warm house surrounded by green is located close to Shibuya, Harajuku, Omotesando and Shinjuku! We provide you with info on best restaurants, areas, history and entertainments that only locals know in Tokyo",
   home_type: "Home",
   owner_id: user1.id,
@@ -843,7 +843,7 @@ list_photo_12 = File.open('app/assets/images/12.jpg')
 list12.photo.attach(io: list_photo_12, filename: '12.jpg')
 
 list13 = Listing.create(
-  title: "Shibuya House w/Garden",
+  title: Faker::Address.community,
   description: "Our comfortable, bright, clean and warm house surrounded by green is located close to Shibuya, Harajuku, Omotesando and Shinjuku! We provide you with info on best restaurants, areas, history and entertainments that only locals know in Tokyo",
   home_type: "Home",
   owner_id: user1.id,
@@ -867,7 +867,7 @@ list_photo_13 = File.open('app/assets/images/13.jpg')
 list13.photo.attach(io: list_photo_13, filename: '13.jpg')
 
 list14 = Listing.create(
-  title: "Shibuya House w/Garden",
+  title: Faker::Address.community,
   description: "Our comfortable, bright, clean and warm house surrounded by green is located close to Shibuya, Harajuku, Omotesando and Shinjuku! We provide you with info on best restaurants, areas, history and entertainments that only locals know in Tokyo",
   home_type: "Home",
   owner_id: user1.id,
@@ -891,7 +891,7 @@ list_photo_14 = File.open('app/assets/images/14.jpg')
 list14.photo.attach(io: list_photo_14, filename: '14.jpg')
 
 list15 = Listing.create(
-  title: "Shibuya House w/Garden",
+  title: Faker::Address.community,
   description: "Our comfortable, bright, clean and warm house surrounded by green is located close to Shibuya, Harajuku, Omotesando and Shinjuku! We provide you with info on best restaurants, areas, history and entertainments that only locals know in Tokyo",
   home_type: "Home",
   owner_id: user1.id,
@@ -915,8 +915,8 @@ list_photo_15 = File.open('app/assets/images/15.jpg')
 list15.photo.attach(io: list_photo_15, filename: '15.jpg')
 
 list46 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -939,8 +939,8 @@ list_photo_46 = File.open('app/assets/images/16.jpg')
 list46.photo.attach(io: list_photo_46, filename: '46.jpg')
 
 list47 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -964,8 +964,8 @@ list47.photo.attach(io: list_photo_47, filename: '47.jpg')
 
 
 list48 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -989,8 +989,8 @@ list48.photo.attach(io: list_photo_48, filename: '48.jpg')
 
 
 list49 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1014,8 +1014,8 @@ list49.photo.attach(io: list_photo_49, filename: '49.jpg')
 
 
 list50 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1039,8 +1039,8 @@ list50.photo.attach(io: list_photo_50, filename: '50.jpg')
 
 
 list51 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1064,8 +1064,8 @@ list51.photo.attach(io: list_photo_51, filename: '51.jpg')
 
 
 list52 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1089,8 +1089,8 @@ list52.photo.attach(io: list_photo_52, filename: '52.jpg')
 
 
 list53 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1114,8 +1114,8 @@ list53.photo.attach(io: list_photo_53, filename: '53.jpg')
 
 
 list54 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1139,8 +1139,8 @@ list54.photo.attach(io: list_photo_54, filename: '54.jpg')
 
 
 list55 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1166,7 +1166,7 @@ list55.photo.attach(io: list_photo_55, filename: '55.jpg')
 # NEW YORK
 
 list16 = Listing.create(
-  title: "Homey Room",
+  title: Faker::Address.community,
   description: "My place is close to the subway and great local cafes and entertainment destinations Goodbye Blue Monday Inc, Tender Trap, and , SoCo. You’ll love my place because of the modern apartment with nice new finishes and central Heat and Air Conditioning, high-speed internet, the great views of the city, and the quick ride to Manhattan. My place is good for couples, solo adventurers, and business travelers. The room accommodates two people (two maximum).",
   home_type: "Apartment",
   owner_id: user1.id,
@@ -1190,7 +1190,7 @@ list_photo_16 = File.open('app/assets/images/16.jpg')
 list16.photo.attach(io: list_photo_16, filename: '16.jpg')
 
 list17 = Listing.create(
-  title: "Homey Room",
+  title: Faker::Address.community,
   description: "My place is close to the subway and great local cafes and entertainment destinations Goodbye Blue Monday Inc, Tender Trap, and , SoCo. You’ll love my place because of the modern apartment with nice new finishes and central Heat and Air Conditioning, high-speed internet, the great views of the city, and the quick ride to Manhattan. My place is good for couples, solo adventurers, and business travelers. The room accommodates two people (two maximum).",
   home_type: "Apartment",
   owner_id: user1.id,
@@ -1214,7 +1214,7 @@ list_photo_17 = File.open('app/assets/images/17.jpg')
 list17.photo.attach(io: list_photo_17, filename: '17.jpg')
 
 list18 = Listing.create(
-  title: "Homey Room",
+  title: Faker::Address.community,
   description: "My place is close to the subway and great local cafes and entertainment destinations Goodbye Blue Monday Inc, Tender Trap, and , SoCo. You’ll love my place because of the modern apartment with nice new finishes and central Heat and Air Conditioning, high-speed internet, the great views of the city, and the quick ride to Manhattan. My place is good for couples, solo adventurers, and business travelers. The room accommodates two people (two maximum).",
   home_type: "Apartment",
   owner_id: user1.id,
@@ -1238,7 +1238,7 @@ list_photo_18 = File.open('app/assets/images/18.jpg')
 list18.photo.attach(io: list_photo_18, filename: '18.jpg')
 
 list19 = Listing.create(
-  title: "Homey Room",
+  title: Faker::Address.community,
   description: "My place is close to the subway and great local cafes and entertainment destinations Goodbye Blue Monday Inc, Tender Trap, and , SoCo. You’ll love my place because of the modern apartment with nice new finishes and central Heat and Air Conditioning, high-speed internet, the great views of the city, and the quick ride to Manhattan. My place is good for couples, solo adventurers, and business travelers. The room accommodates two people (two maximum).",
   home_type: "Apartment",
   owner_id: user1.id,
@@ -1262,7 +1262,7 @@ list_photo_19 = File.open('app/assets/images/1.jpg')
 list19.photo.attach(io: list_photo_19, filename: '19.jpg')
 
 list20 = Listing.create(
-  title: "Homey Room",
+  title: Faker::Address.community,
   description: "My place is close to the subway and great local cafes and entertainment destinations Goodbye Blue Monday Inc, Tender Trap, and , SoCo. You’ll love my place because of the modern apartment with nice new finishes and central Heat and Air Conditioning, high-speed internet, the great views of the city, and the quick ride to Manhattan. My place is good for couples, solo adventurers, and business travelers. The room accommodates two people (two maximum).",
   home_type: "Apartment",
   owner_id: user1.id,
@@ -1286,8 +1286,8 @@ list_photo_20 = File.open('app/assets/images/2.jpg')
 list20.photo.attach(io: list_photo_20, filename: '20.jpg')
 
 list36 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1310,8 +1310,8 @@ list_photo_36 = File.open('app/assets/images/3.jpg')
 list36.photo.attach(io: list_photo_36, filename: '36.jpg')
 
 list37 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1335,8 +1335,8 @@ list37.photo.attach(io: list_photo_37, filename: '37.jpg')
 
 
 list38 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1361,8 +1361,8 @@ list38.photo.attach(io: list_photo_38, filename: '38.jpg')
 
 
 list39 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1387,8 +1387,8 @@ list39.photo.attach(io: list_photo_39, filename: '39.jpg')
 
 
 list40 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1413,8 +1413,8 @@ list40.photo.attach(io: list_photo_40, filename: '40.jpg')
 
 
 list41 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1438,8 +1438,8 @@ list_photo_41 = File.open('app/assets/images/8.jpg')
 list41.photo.attach(io: list_photo_41, filename: '41.jpg')
 
 list42 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1464,8 +1464,8 @@ list42.photo.attach(io: list_photo_42, filename: '42.jpg')
 
 
 list43 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1490,8 +1490,8 @@ list43.photo.attach(io: list_photo_43, filename: '43.jpg')
 
 
 list44 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1516,8 +1516,8 @@ list44.photo.attach(io: list_photo_44, filename: '44.jpg')
 
 
 list45 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1543,7 +1543,7 @@ list45.photo.attach(io: list_photo_45, filename: '45.jpg')
 # HAVANA
 
 list21 = Listing.create(
-  title: "The Albear House",
+  title: Faker::Address.community,
   description: "A cozy apartment with two bedrooms in the Vedado area, very close to La Rampa, the Malecon, the hotels, the wifi zone, the restaurants, the clubs and other interesting sites. Located in a downtown area with easy connections to other places.",
   home_type: "Apartment",
   owner_id: user1.id,
@@ -1567,7 +1567,7 @@ list_photo_21 = File.open('app/assets/images/3.jpg')
 list21.photo.attach(io: list_photo_21, filename: '21.jpg')
 
 list22 = Listing.create(
-  title: "The Albear House",
+  title: Faker::Address.community,
   description: "A cozy apartment with two bedrooms in the Vedado area, very close to La Rampa, the Malecon, the hotels, the wifi zone, the restaurants, the clubs and other interesting sites. Located in a downtown area with easy connections to other places.",
   home_type: "Apartment",
   owner_id: user1.id,
@@ -1591,7 +1591,7 @@ list_photo_22 = File.open('app/assets/images/4.jpg')
 list22.photo.attach(io: list_photo_22, filename: '22.jpg')
 
 list23 = Listing.create(
-  title: "The Albear House",
+  title: Faker::Address.community,
   description: "A cozy apartment with two bedrooms in the Vedado area, very close to La Rampa, the Malecon, the hotels, the wifi zone, the restaurants, the clubs and other interesting sites. Located in a downtown area with easy connections to other places.",
   home_type: "Apartment",
   owner_id: user1.id,
@@ -1615,7 +1615,7 @@ list_photo_23 = File.open('app/assets/images/5.jpg')
 list23.photo.attach(io: list_photo_23, filename: '23.jpg')
 
 list24 = Listing.create(
-  title: "The Albear House",
+  title: Faker::Address.community,
   description: "A cozy apartment with two bedrooms in the Vedado area, very close to La Rampa, the Malecon, the hotels, the wifi zone, the restaurants, the clubs and other interesting sites. Located in a downtown area with easy connections to other places.",
   home_type: "Apartment",
   owner_id: user1.id,
@@ -1639,7 +1639,7 @@ list_photo_24 = File.open('app/assets/images/6.jpg')
 list24.photo.attach(io: list_photo_24, filename: '24.jpg')
 
 list26 = Listing.create(
-  title: "The Albear House",
+  title: Faker::Address.community,
   description: "A cozy apartment with two bedrooms in the Vedado area, very close to La Rampa, the Malecon, the hotels, the wifi zone, the restaurants, the clubs and other interesting sites. Located in a downtown area with easy connections to other places.",
   home_type: "Apartment",
   owner_id: user1.id,
@@ -1663,8 +1663,8 @@ list_photo_26 = File.open('app/assets/images/7.jpg')
 list26.photo.attach(io: list_photo_26, filename: '26.jpg')
 
 list56 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1687,8 +1687,8 @@ list_photo_56 = File.open('app/assets/images/8.jpg')
 list56.photo.attach(io: list_photo_56, filename: '56.jpg')
 
 list57 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1710,8 +1710,8 @@ list_photo_57 = File.open('app/assets/images/9.jpg')
 list57.photo.attach(io: list_photo_57, filename: '57.jpg')
 
 list58 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1734,8 +1734,8 @@ list_photo_58 = File.open('app/assets/images/10.jpg')
 list58.photo.attach(io: list_photo_58, filename: '58.jpg')
 
 list59 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1758,8 +1758,8 @@ list_photo_59 = File.open('app/assets/images/11.jpg')
 list59.photo.attach(io: list_photo_59, filename: '59.jpg')
 
 list60 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1783,8 +1783,8 @@ list60.photo.attach(io: list_photo_60, filename: '60.jpg')
 
 
 list61 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1808,8 +1808,8 @@ list61.photo.attach(io: list_photo_61, filename: '61.jpg')
 
 
 list62 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1833,8 +1833,8 @@ list62.photo.attach(io: list_photo_62, filename: '62.jpg')
 
 
 list63 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1858,8 +1858,8 @@ list63.photo.attach(io: list_photo_63, filename: '63.jpg')
 
 
 list64 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1883,8 +1883,8 @@ list64.photo.attach(io: list_photo_64, filename: '64.jpg')
 
 
 list65 = Listing.create(
-  title: Faker::Address.state,
-  description: Faker::GreekPhilosophers.quote,
+  title: Faker::Address.community,
+  description: Faker::Lorem.paragraph,
   home_type: "Home",
   owner_id: user1.id,
   address_1: "1801 Franklin",
@@ -1936,320 +1936,18 @@ Booking.create(
 # REVIEWS
 Review.destroy_all
 
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user1.id,
-  listing_id: list1.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user2.id,
-  listing_id: list1.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user3.id,
-  listing_id: list1.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user4.id,
-  listing_id: list1.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user4.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user3.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user3.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user1.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user1.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user4.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user2.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user1.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user1.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user4.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user2.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user1.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user3.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user2.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user3.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user4.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user4.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user1.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user3.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user2.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user3.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
-
-Review.create(
-  body: Faker::GreekPhilosophers.quote,
-  author_id: user4.id,
-  listing_id: Listing.order('RANDOM()').first.id,
-  accuracy: 4,
-  communication: 4,
-  cleanliness: 4,
-  location: 5,
-  check_in: 5,
-  value: 4
-)
+Listing.all.each do |listing|
+  User.all.each do |user|
+    Review.create(
+    body: Faker::Lorem.paragraph,
+    author_id: user.id,
+    listing_id: listing.id,
+    accuracy: 1 + rand(5),
+    communication: 1 + rand(5),
+    cleanliness: 1 + rand(5),
+    location: 1 + rand(5),
+    check_in: 1 + rand(5),
+    value: 1 + rand(5)
+  )
+  end
+end

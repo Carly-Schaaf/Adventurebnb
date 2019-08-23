@@ -66,7 +66,8 @@ class MasterIndex extends React.Component {
         <div className="spinner-container">
           <BeatLoader />
         </div>
-      );}
+      )
+      ;}
     const { sfListings,
             laListings,
             nyListings,
