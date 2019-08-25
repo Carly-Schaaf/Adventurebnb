@@ -18,8 +18,9 @@ class MasterIndex extends React.Component {
   componentDidMount() {
     let gridWidth, numPhotos;
     window.addEventListener("resize", (e) => {
-      gridWidth = e.target.innerWidth - 230;
-      numPhotos = Math.floor(gridWidth / 300);
+      gridWidth = e.target.innerWidth - 120;
+      numPhotos = Math.floor(gridWidth / 295);
+      console.log(numPhotos)
       this.setState({numPhotos: numPhotos})
     });
     gridWidth = window.innerWidth - 230;
