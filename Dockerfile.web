@@ -7,7 +7,7 @@ RUN apk add --no-cache --update build-base \
     nodejs \
     tzdata
 
-ARG DATABASE_URL="postgres://postgres@db"
+ARG DATABASE_URL="pƒostgres://postgres@db"
 ARG RAILS_ENV=production
 
 WORKDIR /myapp

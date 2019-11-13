@@ -76,7 +76,7 @@ class Modal extends React.Component {
 
 }}
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
   return({
     modal: state.ui.modal.modalType,
     currentUser: state.session.id,
