@@ -14,10 +14,6 @@ I built the map feature using the Google Maps API and Google’s Geocoding API -
 
 ![Map Gif](./app/assets/images/carlygify.gif "Map Gif")
 
-I wrote the following SQL query in order to fetch a home and its average total rating across 6 different rating categories with just one database query, significantly improving the loading time of the homes index page.
-
-![Code Snippet of SQL Query](https://user-images.githubusercontent.com/39382120/63602605-ad8fa680-c57c-11e9-8618-73f27e53cfa5.png)
-
 ![Listings Page](https://user-images.githubusercontent.com/39382120/60606842-f000e800-9d70-11e9-8db2-b254baeac20a.png "Listings Page")
 
 My listing show-page enables logged-in users to book a listing. Users can only book if another user has not already booked that date or any overlapping dates, and can only book for the number of guests that the listing allows for. I built my calendar feature using Airbnb's own calendar library, React-Dates.
